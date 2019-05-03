@@ -1,0 +1,458 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+button {
+  border: none;
+  background-color: #08fded;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25.4px;
+  line-height: 41.6px;
+  text-align: center;
+  padding: 10px 15px;
+  width: 34%;
+  white-space: nowrap;
+}
+
+.mainWrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-image: url("../assets/home-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3faff;
+  height: 100vh;
+}
+
+header .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+header .mainWrapper .headerContent {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+header .mainWrapper .headerContent .headerNav {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainWrapper .headerContent .headerNav ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mainWrapper .headerContent .headerNav ul li a {
+  color: #f3faff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+header .mainWrapper .headerContent .headerTitle {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainWrapper .headerContent .headerTitle h1 {
+  width: 100%;
+  font-size: 145.2px;
+  font-family: 'Walter Turncoat', cursive;
+  padding-top: 30%;
+}
+
+header .mainWrapper .headerImg {
+  width: auto;
+  margin-top: 20%;
+  margin-right: -12.5%;
+}
+
+.fourLinks {
+  padding-top: 15%;
+  width: 100%;
+  background-color: #03697c;
+  color: #f3faff;
+}
+
+.fourLinks .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer i {
+  font-size: 35px;
+  border-radius: 50%;
+  background-color: #08fded;
+  padding: 2%;
+  color: #044779;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle h2 {
+  margin-left: 2%;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 45px;
+  line-height: 99.8px;
+  text-transform: uppercase;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText p {
+  padding-left: 13%;
+  font-size: 20px;
+}
+
+.quadrantSection {
+  width: 100%;
+  background-color: #474bb5;
+  font-family: 'Roboto', sans-serif;
+  color: #f3faff;
+}
+
+.quadrantSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quadrantSection .mainWrapper .ourPrograms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
+  width: 52.5%;
+  margin-left: -12.5%;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText p {
+  font-size: 20px;
+}
+
+.quadrantSection .mainWrapper .newLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationImg {
+  width: 52.5%;
+  margin-right: -12.5%;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText p {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */
