@@ -179,7 +179,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-h1, h2, h3, ul, li {
+h1, h2, h3, ul, li, p {
   margin: 0;
   padding: 0;
 }
@@ -209,6 +209,7 @@ button {
   padding: 10px 15px;
   width: 34%;
   white-space: nowrap;
+  color: #474bb5;
 }
 
 .mainWrapper {
@@ -296,7 +297,7 @@ header .mainWrapper .headerImg {
 }
 
 .fourLinks {
-  padding-top: 15%;
+  padding: 15% 0 5% 0;
   width: 100%;
   background-color: #03697c;
   color: #f3faff;
@@ -353,12 +354,13 @@ header .mainWrapper .headerImg {
   font-family: 'Walter Turncoat', cursive;
   font-size: 45px;
   line-height: 99.8px;
-  text-transform: uppercase;
 }
 
 .fourLinks .mainWrapper .fourLinksContainer .fourLinksText p {
   padding-left: 13%;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  line-height: 28px;
 }
 
 .quadrantSection {
@@ -412,7 +414,10 @@ header .mainWrapper .headerImg {
 }
 
 .quadrantSection .mainWrapper .ourPrograms .ourProgramsText p {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
 }
 
 .quadrantSection .mainWrapper .newLocation {
@@ -453,6 +458,142 @@ header .mainWrapper .headerImg {
 }
 
 .quadrantSection .mainWrapper .newLocation .newLocationText p {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.roadTripsSection {
+  width: 100%;
+  background-color: #03697c;
+  color: #f3faff;
+  padding: 13% 5% 8% 5%;
+}
+
+.roadTripsSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent h2 {
+  font-size: 40px;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent button {
+  width: 25%;
+}
+
+.swimmingImg {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eventsSection {
+  width: 100%;
+  background-color: #03697c;
+  padding: 10% 0 5% 0;
+}
+
+.eventsSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventsSection .mainWrapper .eventsImg {
+  width: 30%;
+}
+
+.eventsSection .mainWrapper .eventsContent {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f3faff;
+}
+
+.eventsSection .mainWrapper .eventsContent h2 {
+  font-size: 40px;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+.eventsSection .mainWrapper .eventsContent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.eventsSection .mainWrapper .eventsContent button {
+  width: 30%;
+}
+
+.gallerySection {
+  width: 100%;
+  background-color: #474bb5;
+  padding: 5% 0;
+}
+
+.gallerySection .mainWrapper .galleryContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallerySection .mainWrapper .galleryContainer .galleryItem {
+  width: 31%;
+}
+
+footer {
+  width: 100%;
+  background-color: #044779;
+  color: #f3faff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
