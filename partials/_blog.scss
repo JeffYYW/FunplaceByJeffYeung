@@ -1,0 +1,163 @@
+header {
+    width: 100%;
+    background-image: url("../assets/blog-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $textColor;
+    height: 100vh;
+    // display: flex;
+    
+    .mainWrapper {
+        display: flex;
+        // flex-direction: column;
+        height: 100%;
+        max-width: 90%;
+
+        .blogHeader {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            .blogHeaderNav {
+                // border: 2px solid yellow;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                padding-top: 5%;
+            }
+
+            .blogHeaderNav ul {
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                
+
+                li a {
+                   color: $textColor;
+                   font-family: 'Roboto', sans-serif;
+                   font-size: 20px;
+                   line-height: 29px;
+                   letter-spacing: 1px;
+                }
+            }
+
+            .blogHeaderTitle {
+                // border: 2px solid yellow;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    width: 100%;
+                    font-size: 121.5px;
+                    line-height: 125.6px;
+                    // border: 2px solid red;
+                    font-family: 'Walter Turncoat', cursive;
+                    padding-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+.blogSection {
+    width: 100%;
+    background-color: $primaryColor;
+    padding: 6% 0 5% 0;
+    color: $textColor;
+    display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+
+    // .mainWrapper {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     max-width: 100%;
+
+        .blogAside {
+            width: 28%;
+            display: flex;
+            flex-direction: column;
+            background-color: $secondaryColor;
+            margin-bottom: 15%;
+            margin-left: 5%;
+
+            .asideImg {
+                margin-left: -18%;
+                margin-right: 4.5%;
+                margin-top: -5%;
+            }
+
+            .asideText {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                // align-items: space-between;
+                
+                
+                .asideMission,
+                .recentPosts {
+                    padding: 5%;
+                }
+
+                h3 {
+                    font-family: 'Walter Turncoat', cursive;
+                    font-size: 26px;
+                    margin-bottom: 2%;
+                }
+
+                p, li {
+                   font-family: 'Roboto', sans-serif;
+                   font-size: 20px;
+                   line-height: 28px;
+                }
+
+                // li {
+                //     // list-style-type: circle;
+                //     // list-style-position: inside;
+                //     // padding-left: 5%;
+                // }
+            }
+        }
+
+        .activities {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin-top: -17%;
+
+            .activitiesImg {
+                margin-right: -9%;
+                box-shadow: -15px 15px 0 1px rgba(8, 253, 237, 1);
+                margin-right: 0%;
+                margin-left: 30px;
+            }
+
+            .activitiesText {
+                padding: 5% 0 5% 10%;
+                border-left: 5px solid $accentColor;
+                border-bottom: 5px solid $accentColor;
+                padding-right: 5%;
+                margin-left: 1.6%;
+
+                * {
+                    margin-bottom: 3%;
+                }
+
+                h2 {
+                    font-family: 'Walter Turncoat', cursive;
+                    font-size: 48px;
+                }
+
+                p {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 20px;
+                    line-height: 28px;
+                } 
+            }
+        }
+    // }
+}
+

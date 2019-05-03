@@ -179,6 +179,273 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+header {
+  width: 100%;
+  background-image: url("../assets/home-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3faff;
+  height: 100vh;
+}
+
+header .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+header .mainWrapper .headerContent {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+header .mainWrapper .headerContent .headerNav {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
+}
+
+header .mainWrapper .headerContent .headerNav ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mainWrapper .headerContent .headerNav ul li a {
+  color: #f3faff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+header .mainWrapper .headerContent .headerTitle {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainWrapper .headerContent .headerTitle h1 {
+  width: 100%;
+  font-size: 145.2px;
+  font-family: 'Walter Turncoat', cursive;
+  padding-top: 30%;
+}
+
+header .mainWrapper .headerImg {
+  width: auto;
+  margin-top: 20%;
+  margin-right: -5.5%;
+}
+
+header {
+  width: 100%;
+  background-image: url("../assets/blog-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3faff;
+  height: 100vh;
+}
+
+header .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 90%;
+}
+
+header .mainWrapper .blogHeader {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+header .mainWrapper .blogHeader .blogHeaderNav {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
+}
+
+header .mainWrapper .blogHeader .blogHeaderNav ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .mainWrapper .blogHeader .blogHeaderNav ul li a {
+  color: #f3faff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+header .mainWrapper .blogHeader .blogHeaderTitle {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mainWrapper .blogHeader .blogHeaderTitle h1 {
+  width: 100%;
+  font-size: 121.5px;
+  line-height: 125.6px;
+  font-family: 'Walter Turncoat', cursive;
+  padding-top: 5%;
+}
+
+.blogSection {
+  width: 100%;
+  background-color: #03697c;
+  padding: 6% 0 5% 0;
+  color: #f3faff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+}
+
+.blogSection .blogAside {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #474bb5;
+  margin-bottom: 15%;
+  margin-left: 5%;
+}
+
+.blogSection .blogAside .asideImg {
+  margin-left: -18%;
+  margin-right: 4.5%;
+  margin-top: -5%;
+}
+
+.blogSection .blogAside .asideText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogSection .blogAside .asideText .asideMission,
+.blogSection .blogAside .asideText .recentPosts {
+  padding: 5%;
+}
+
+.blogSection .blogAside .asideText h3 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 26px;
+  margin-bottom: 2%;
+}
+
+.blogSection .blogAside .asideText p, .blogSection .blogAside .asideText li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.blogSection .activities {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -17%;
+}
+
+.blogSection .activities .activitiesImg {
+  margin-right: -9%;
+  -webkit-box-shadow: -15px 15px 0 1px #08fded;
+          box-shadow: -15px 15px 0 1px #08fded;
+  margin-right: 0%;
+  margin-left: 30px;
+}
+
+.blogSection .activities .activitiesText {
+  padding: 5% 0 5% 10%;
+  border-left: 5px solid #08fded;
+  border-bottom: 5px solid #08fded;
+  padding-right: 5%;
+  margin-left: 1.6%;
+}
+
+.blogSection .activities .activitiesText * {
+  margin-bottom: 3%;
+}
+
+.blogSection .activities .activitiesText h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 48px;
+}
+
+.blogSection .activities .activitiesText p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 h1, h2, h3, ul, li, p {
   margin: 0;
   padding: 0;
@@ -217,85 +484,6 @@ button {
   margin: 0 auto;
 }
 
-header {
-  width: 100%;
-  background-image: url("../assets/home-header.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #f3faff;
-  height: 100vh;
-}
-
-header .mainWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
-header .mainWrapper .headerContent {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-header .mainWrapper .headerContent .headerNav {
-  height: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .mainWrapper .headerContent .headerNav ul {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header .mainWrapper .headerContent .headerNav ul li a {
-  color: #f3faff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: 1px;
-}
-
-header .mainWrapper .headerContent .headerTitle {
-  height: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .mainWrapper .headerContent .headerTitle h1 {
-  width: 100%;
-  font-size: 145.2px;
-  font-family: 'Walter Turncoat', cursive;
-  padding-top: 30%;
-}
-
-header .mainWrapper .headerImg {
-  width: auto;
-  margin-top: 20%;
-  margin-right: -12.5%;
-}
-
 .fourLinks {
   padding: 15% 0 5% 0;
   width: 100%;
@@ -322,15 +510,38 @@ header .mainWrapper .headerImg {
           flex-direction: row;
 }
 
-.fourLinks .mainWrapper .fourLinksContainer i {
-  font-size: 35px;
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText i {
+  font-size: 32px;
   border-radius: 50%;
   background-color: #08fded;
   padding: 2%;
-  color: #044779;
+  color: #474bb5;
+  margin-top: 4%;
 }
 
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText {
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fa-users {
+  padding: 3% 2.5%;
+  font-size: 24px;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fa-file {
+  padding: 2% 3%;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fa-phone {
+  font-size: 24px;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,26 +549,16 @@ header .mainWrapper .headerImg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 2%;
 }
 
 .fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle h2 {
-  margin-left: 2%;
   font-family: 'Walter Turncoat', cursive;
   font-size: 45px;
   line-height: 99.8px;
 }
 
 .fourLinks .mainWrapper .fourLinksContainer .fourLinksText p {
-  padding-left: 13%;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -390,11 +591,15 @@ header .mainWrapper .headerImg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5% 0;
 }
 
 .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
   width: 52.5%;
   margin-left: -12.5%;
+  -webkit-box-shadow: 15px 15px 0 1px #08fded;
+          box-shadow: 15px 15px 0 1px #08fded;
+  margin-top: -10%;
 }
 
 .quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
@@ -430,11 +635,15 @@ header .mainWrapper .headerImg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5% 0;
 }
 
 .quadrantSection .mainWrapper .newLocation .newLocationImg {
   width: 52.5%;
   margin-right: -12.5%;
+  -webkit-box-shadow: -15px 15px 0 1px #08fded;
+          box-shadow: -15px 15px 0 1px #08fded;
+  margin-bottom: -10%;
 }
 
 .quadrantSection .mainWrapper .newLocation .newLocationText {
@@ -536,6 +745,8 @@ header .mainWrapper .headerImg {
 
 .eventsSection .mainWrapper .eventsImg {
   width: 30%;
+  -webkit-box-shadow: -15px 15px 0 1px #08fded;
+          box-shadow: -15px 15px 0 1px #08fded;
 }
 
 .eventsSection .mainWrapper .eventsContent {

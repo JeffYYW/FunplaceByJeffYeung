@@ -1,14 +1,10 @@
 @import "../partials/setup";
+@import "../partials/variables";
+@import "../partials/header";
+@import "../partials/blog";
 
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Walter Turncoat', cursive;
-
-
-$primaryColor: #03697c;
-$secondaryColor: #474bb5;
-$tertiaryColor: #044779;
-$textColor: #f3faff;
-$accentColor: #08fded;
 
 h1, h2, h3, ul, li, p {
     margin: 0;
@@ -48,71 +44,6 @@ button {
     margin: 0 auto;
 }
 
-header {
-    width: 100%;
-    background-image: url("../assets/home-header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: $textColor;
-    height: 100vh;
-    // display: flex;
-    
-    .mainWrapper {
-        display: flex;
-        // flex-direction: column;
-        height: 100%;
-
-        .headerContent {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-
-            .headerNav {
-                // border: 2px solid yellow;
-                height: 10%;
-                display: flex;
-                align-items: center;
-            }
-
-            .headerNav ul {
-                width: 75%;
-                display: flex;
-                justify-content: space-between;
-                
-
-                li a {
-                   color: $textColor;
-                   font-family: 'Roboto', sans-serif;
-                   font-size: 20px;
-                   line-height: 29px;
-                   letter-spacing: 1px;
-                }
-            }
-
-            .headerTitle {
-                // border: 2px solid yellow;
-                height: 90%;
-                display: flex;
-                align-items: center;
-
-                h1 {
-                    width: 100%;
-                    font-size: 145.2px;
-                    // border: 2px solid red;
-                    font-family: 'Walter Turncoat', cursive;
-                    padding-top: 30%;
-                }
-            }
-        }
-
-        .headerImg {
-            width: auto;
-            margin-top: 20%;
-            margin-right: -12.5%;
-        }
-    }
-}
 
 .fourLinks {
     padding: 15% 0 5% 0;
@@ -129,26 +60,45 @@ header {
             width: 50%;
             display: flex;
             flex-direction: row;
-
-            i {
-                // border: 2px solid red;
-                font-size: 35px;
-                border-radius: 50%;
-                background-color: $accentColor;
-                padding: 2%;
-                color: #044779;
-            }
         
             .fourLinksText {
                 display: flex;
-                flex-direction: column;
+                // flex-direction: column;
+                // justify-content: center;    
+                align-items: flex-start;
+
+                i {
+                    // border: 2px solid red;
+                    font-size: 32px;
+                    border-radius: 50%;
+                    background-color: $accentColor;
+                    padding: 2%;
+                    color: $secondaryColor;
+                    // align-self: flex-start;
+                    margin-top: 4%; 
+                }
+
+                .fa-users {
+                    padding: 3% 2.5%;
+                    font-size: 24px;
+                }
+
+                .fa-file {
+                    padding: 2% 3%;
+                }
+
+                .fa-phone {
+                    font-size: 24px;
+                }
 
                 .fourLinksTitle {
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
+                    flex-direction: column;
+                    margin-left: 2%;
 
                     h2 {
-                        margin-left: 2%;
+                        
                         font-family: 'Walter Turncoat', cursive;
                         font-size: 45px;
                         line-height: 99.8px;
@@ -157,7 +107,7 @@ header {
                 }
 
                 p {
-                    padding-left: 13%;
+                    // padding-left: 13%;
                     font-family: 'Roboto', sans-serif;
                     font-size: 20px;
                     line-height: 28px;
@@ -182,11 +132,14 @@ header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 5% 0;
         
 
             .ourProgramsImg {
                 width: 52.5%;
                 margin-left: -12.5%;
+                box-shadow: 15px 15px 0 1px rgba(8, 253, 237, 1);
+                margin-top: -10%;
             }
 
             .ourProgramsText {
@@ -210,12 +163,16 @@ header {
 
         .newLocation {
             display: flex;
+            // flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
+            padding: 5% 0;
             
             .newLocationImg {
                 width: 52.5%;
                 margin-right: -12.5%;
+                box-shadow: -15px 15px 0 1px rgba(8, 253, 237, 1);
+                margin-bottom: -10%;
             }
 
             .newLocationText {
@@ -296,6 +253,7 @@ header {
 
         .eventsImg {
             width: 30%;
+            box-shadow: -15px 15px 0 1px rgba(8, 253, 237, 1);
         }
 
         .eventsContent {
