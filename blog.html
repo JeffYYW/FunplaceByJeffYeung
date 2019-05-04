@@ -71,25 +71,42 @@
         <section class="commentsSection">
             <div class="commentsContainer">
                 <h2>Comments:</h2>
-                <div class="commentItem">
-                    <img src="" alt="">
+                <div class="commentItem first">
+                    <div class="commentImg"> 
+                        <img src="assets/comment-1.jpg" alt="profile picture of a female young adult with glasses and colored hair">
+                    </div>
                     <div class="commentPost">
                         <h3>Tuesday October 9th, 2019 by Mariama</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam labore aliquam fuga maiores fugit? Consectetur sapiente facilis earum, optio illo nam? Molestias quasi amet temporibus hic eaque distinctio, enim reiciendis rem id nostrum, optio harum fugit. Numquam possimus autem quam?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam labore aliquam fuga maiores fugit? Consectetur sapiente facilis earum, optio illo nam? Molestias quasi amet temporibus hic eaque distinctio.</p>
                     </div>
                 </div>
                 <div class="commentItem">
-                    <img src="" alt="">
+                    <div class="commentImg">
+                        <img src="assets/comment-2.jpg" alt="profile picture of a male young adult">
+                    </div>
                     <div class="commentPost">
                         <h3>Wednesday October 10th, 2019 by Rob</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quam ducimus, modi dolorum aperiam inventore rerum quasi animi voluptatum, qui officia deleniti? Ipsa voluptatibus recusandae officiis assumenda, dolorem ipsum dolores quae sit provident cum deserunt!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quam ducimus, modi dolorum aperiam inventore rerum quasi animi voluptatum!</p>
                     </div>
                 </div>
             </div>
             <form action="">
-                
+                <div class="formFields">
+                    <label for="name" class="visuallyHidden"></label>
+                    <input type="text" placeholder="Name">
+
+                    <label for="email" class="visuallyHidden"></label>
+                    <input type="email" placeholder="Email address">
+                </div>
+                <label for="comments"></label>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+                <button>Post Comment</button>
             </form>
         </section>
     </main>
+    <footer>
+        <p>Copyright &copy; 2019 HackerYou</p>
+    </footer>
 </body>
 </html>

@@ -3,3 +3,9 @@ $secondaryColor: #474bb5;
 $tertiaryColor: #044779;
 $textColor: #f3faff;
 $accentColor: #08fded;
+
+@mixin pStyles {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+}

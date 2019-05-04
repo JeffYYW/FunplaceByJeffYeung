@@ -108,9 +108,7 @@ button {
 
                 p {
                     // padding-left: 13%;
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 20px;
-                    line-height: 28px;
+                    @include pStyles;
                 }
             }
         }
@@ -153,9 +151,7 @@ button {
                 }
 
                 p {
-                   font-family: 'Roboto', sans-serif;
-                   font-size: 20px;
-                   line-height: 28px;
+                   @include pStyles;
                    padding: 5% 0;
                 }
             }
@@ -188,9 +184,7 @@ button {
                 }
 
                 p {
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 20px;
-                    line-height: 28px;
+                    @include pStyles;
                     padding: 5% 0;
                 }
             }
@@ -219,9 +213,7 @@ button {
             }
 
             p {
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                line-height: 28px;
+                @include pStyles;
                 padding: 5% 0;
             }
 
@@ -268,9 +260,7 @@ button {
             }
 
             p {
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                line-height: 28px;
+                @include pStyles;
                 padding: 5% 0;
             }
 
@@ -308,9 +298,7 @@ footer {
     background-color: $tertiaryColor;
     color: $textColor;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 28px;
+    @include pStyles;
     padding: 10px 0;
 }
 

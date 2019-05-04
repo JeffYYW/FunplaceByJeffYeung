@@ -218,6 +218,11 @@ header .mainWrapper .headerContent .headerNav {
   padding-top: 5%;
 }
 
+header .mainWrapper .headerContent .headerNav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #08fded;
+}
+
 header .mainWrapper .headerContent .headerNav ul {
   width: 75%;
   display: -webkit-box;
@@ -317,6 +322,11 @@ header .mainWrapper .blogHeader .blogHeaderNav ul li a {
   letter-spacing: 1px;
 }
 
+header .mainWrapper .blogHeader .blogHeaderNav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #08fded;
+}
+
 header .mainWrapper .blogHeader .blogHeaderTitle {
   height: 80%;
   display: -webkit-box;
@@ -342,7 +352,7 @@ header .mainWrapper .blogHeader .blogHeaderTitle h1 {
 .blogSection {
   width: 100%;
   background-color: #03697c;
-  padding: 6% 0 5% 0;
+  padding: 6% 0 1% 0;
   color: #f3faff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,10 +434,9 @@ header .mainWrapper .blogHeader .blogHeaderTitle h1 {
 }
 
 .blogSection .activities .activitiesText {
-  padding: 5% 0 10% 10%;
+  padding: 5% 5% 10% 10%;
   border-left: 5px solid #08fded;
   border-bottom: 5px solid #08fded;
-  padding-right: 5%;
   margin-left: 1.6%;
 }
 
@@ -437,13 +446,136 @@ header .mainWrapper .blogHeader .blogHeaderTitle h1 {
 
 .blogSection .activities .activitiesText h2 {
   font-family: 'Walter Turncoat', cursive;
-  font-size: 48px;
+  font-size: 80px;
+  font-weight: 100;
 }
 
 .blogSection .activities .activitiesText p {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+}
+
+.commentsSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #03697c;
+}
+
+.commentsSection .commentsContainer {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 4% 5% 7.5%;
+  color: #f3faff;
+}
+
+.commentsSection .commentsContainer h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 80px;
+  font-weight: 100;
+  margin-bottom: 2%;
+}
+
+.commentsSection .commentsContainer .commentItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentsSection .commentsContainer .commentItem .commentImg {
+  width: 13%;
+}
+
+.commentsSection .commentsContainer .commentItem .commentPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 81%;
+}
+
+.commentsSection .commentsContainer .commentItem .commentPost h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.commentsSection .commentsContainer .commentItem .commentPost p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.commentsSection .commentsContainer .commentItem.first {
+  margin-bottom: 15%;
+}
+
+.commentsSection form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  border: 2px solid yellow;
+}
+
+.commentsSection form .formFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.commentsSection form .formFields input[type="text"] {
+  width: 45%;
+}
+
+.commentsSection form .formFields input[type="email"] {
+  width: 45%;
+}
+
+footer {
+  width: 100%;
+  background-color: #044779;
+  color: #f3faff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px 0;
 }
 
 h1, h2, h3, ul, li, p {
