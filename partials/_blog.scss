@@ -1,8 +1,8 @@
-header {
+.blogHeader {
     width: 100%;
     background-image: url("../assets/blog-header.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     color: $textColor;
     height: 100vh;
     // display: flex;
@@ -13,7 +13,7 @@ header {
         height: 100%;
         max-width: 90%;
 
-        .blogHeader {
+        .blogContent {
             width: 50%;
             display: flex;
             flex-direction: column;
@@ -228,24 +228,60 @@ header {
         display: flex;
         flex-direction: column;
         // align-items: flex-start;
-        width: 60%;
-        border: 2px solid yellow;
+        width: 50%;
+        // border: 2px solid yellow;
+        margin-right: 4%;
+        margin-bottom: 6%;
+        
 
         .formFields {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 5%;
 
             input[type="text"] {
                 width: 45%;
-                // display: inline-block;
+                height: 50px;
+                border: none;
+                background-color: $primaryColor;
+                border-bottom: 2px solid $accentColor;
+                @include pStyles;
             }
 
             input[type="email"] {
                 width: 45%;
-                // display: inline-block;
+                height: 50px;
+                border: none;
+                background-color: $primaryColor;
+                border-bottom: 2px solid $accentColor;
+                @include pStyles;
             }
 
+            input::placeholder {
+                padding-left: 10%;
+                color: $textColor;
+                // @include pStyles;
+            }
+        }
+
+        textarea {
+            border: none;
+            background-color: $primaryColor;
+            border: 2px solid $accentColor;
+            @include pStyles;
+            margin-bottom: 5%;
+        }
+
+        textarea::placeholder {
+            padding-left: 2%;
+            padding-top: 2%;
+            color: $textColor;
+        }
+
+        button {
+            width: 100%;
+            padding: 5px 0;
         }
     }
 }
@@ -260,3 +296,5 @@ footer {
 }
 
 // compelled to get minute details right
+
+// main 2 div width may be too small

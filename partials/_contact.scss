@@ -1,8 +1,8 @@
-.mainHeader {
+.contactHeader {
     width: 100%;
-    background-image: url("../assets/home-header.jpg");
+    background-image: url("../assets/contact-header.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     color: $textColor;
     height: 100vh;
     // display: flex;
@@ -11,31 +11,23 @@
         display: flex;
         // flex-direction: column;
         height: 100%;
+        max-width: 80%;
 
-        .headerContent {
+        .contactContent {
             width: 50%;
             display: flex;
             flex-direction: column;
             height: 100%;
 
-            .headerNav {
+            .contactHeaderNav {
                 // border: 2px solid yellow;
                 height: 20%;
                 display: flex;
                 align-items: center;
                 padding-top: 5%;
-                
-
-                ul {
-
-                    li a:hover {
-                        padding-bottom: 5px;
-                        border-bottom: 2px solid $accentColor;
-                    }
-                }
             }
 
-            .headerNav ul {
+            .contactHeaderNav ul {
                 width: 75%;
                 display: flex;
                 justify-content: space-between;
@@ -48,28 +40,30 @@
                    line-height: 29px;
                    letter-spacing: 1px;
                 }
+
+                li a:hover {
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid $accentColor;
+                }
+                
             }
 
-            .headerTitle {
+            .contactHeaderTitle {
                 // border: 2px solid yellow;
                 height: 80%;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
 
                 h1 {
                     width: 100%;
-                    font-size: 145.2px;
+                    font-size: 121.5px;
+                    line-height: 125.6px;
                     // border: 2px solid red;
                     font-family: 'Walter Turncoat', cursive;
-                    padding-top: 30%;
+                    padding-top: 5%;
                 }
             }
-        }
-
-        .headerImg {
-            width: auto;
-            margin-top: 20%;
-            margin-right: -5.5%;
         }
     }
 }

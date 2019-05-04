@@ -179,7 +179,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-header {
+.mainHeader {
   width: 100%;
   background-image: url("../assets/home-header.jpg");
   background-repeat: no-repeat;
@@ -188,14 +188,14 @@ header {
   height: 100vh;
 }
 
-header .mainWrapper {
+.mainHeader .mainWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
 
-header .mainWrapper .headerContent {
+.mainHeader .mainWrapper .headerContent {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,7 +207,7 @@ header .mainWrapper .headerContent {
   height: 100%;
 }
 
-header .mainWrapper .headerContent .headerNav {
+.mainHeader .mainWrapper .headerContent .headerNav {
   height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,12 +218,12 @@ header .mainWrapper .headerContent .headerNav {
   padding-top: 5%;
 }
 
-header .mainWrapper .headerContent .headerNav ul li a:hover {
+.mainHeader .mainWrapper .headerContent .headerNav ul li a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid #08fded;
 }
 
-header .mainWrapper .headerContent .headerNav ul {
+.mainHeader .mainWrapper .headerContent .headerNav ul {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +233,7 @@ header .mainWrapper .headerContent .headerNav ul {
           justify-content: space-between;
 }
 
-header .mainWrapper .headerContent .headerNav ul li a {
+.mainHeader .mainWrapper .headerContent .headerNav ul li a {
   color: #f3faff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -241,7 +241,7 @@ header .mainWrapper .headerContent .headerNav ul li a {
   letter-spacing: 1px;
 }
 
-header .mainWrapper .headerContent .headerTitle {
+.mainHeader .mainWrapper .headerContent .headerTitle {
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,29 +251,29 @@ header .mainWrapper .headerContent .headerTitle {
           align-items: center;
 }
 
-header .mainWrapper .headerContent .headerTitle h1 {
+.mainHeader .mainWrapper .headerContent .headerTitle h1 {
   width: 100%;
   font-size: 145.2px;
   font-family: 'Walter Turncoat', cursive;
   padding-top: 30%;
 }
 
-header .mainWrapper .headerImg {
+.mainHeader .mainWrapper .headerImg {
   width: auto;
   margin-top: 20%;
   margin-right: -5.5%;
 }
 
-header {
+.blogHeader {
   width: 100%;
   background-image: url("../assets/blog-header.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   color: #f3faff;
   height: 100vh;
 }
 
-header .mainWrapper {
+.blogHeader .mainWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +281,7 @@ header .mainWrapper {
   max-width: 90%;
 }
 
-header .mainWrapper .blogHeader {
+.blogHeader .mainWrapper .blogContent {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +293,7 @@ header .mainWrapper .blogHeader {
   height: 100%;
 }
 
-header .mainWrapper .blogHeader .blogHeaderNav {
+.blogHeader .mainWrapper .blogContent .blogHeaderNav {
   height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +304,7 @@ header .mainWrapper .blogHeader .blogHeaderNav {
   padding-top: 5%;
 }
 
-header .mainWrapper .blogHeader .blogHeaderNav ul {
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +314,7 @@ header .mainWrapper .blogHeader .blogHeaderNav ul {
           justify-content: space-between;
 }
 
-header .mainWrapper .blogHeader .blogHeaderNav ul li a {
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a {
   color: #f3faff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -322,12 +322,12 @@ header .mainWrapper .blogHeader .blogHeaderNav ul li a {
   letter-spacing: 1px;
 }
 
-header .mainWrapper .blogHeader .blogHeaderNav ul li a:hover {
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid #08fded;
 }
 
-header .mainWrapper .blogHeader .blogHeaderTitle {
+.blogHeader .mainWrapper .blogContent .blogHeaderTitle {
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +341,7 @@ header .mainWrapper .blogHeader .blogHeaderTitle {
           align-items: center;
 }
 
-header .mainWrapper .blogHeader .blogHeaderTitle h1 {
+.blogHeader .mainWrapper .blogContent .blogHeaderTitle h1 {
   width: 100%;
   font-size: 121.5px;
   line-height: 125.6px;
@@ -542,8 +542,9 @@ header .mainWrapper .blogHeader .blogHeaderTitle h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
-  border: 2px solid yellow;
+  width: 50%;
+  margin-right: 4%;
+  margin-bottom: 6%;
 }
 
 .commentsSection form .formFields {
@@ -557,14 +558,88 @@ header .mainWrapper .blogHeader .blogHeaderTitle h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .commentsSection form .formFields input[type="text"] {
   width: 45%;
+  height: 50px;
+  border: none;
+  background-color: #03697c;
+  border-bottom: 2px solid #08fded;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .commentsSection form .formFields input[type="email"] {
   width: 45%;
+  height: 50px;
+  border: none;
+  background-color: #03697c;
+  border-bottom: 2px solid #08fded;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.commentsSection form .formFields input::-webkit-input-placeholder {
+  padding-left: 10%;
+  color: #f3faff;
+}
+
+.commentsSection form .formFields input:-ms-input-placeholder {
+  padding-left: 10%;
+  color: #f3faff;
+}
+
+.commentsSection form .formFields input::-ms-input-placeholder {
+  padding-left: 10%;
+  color: #f3faff;
+}
+
+.commentsSection form .formFields input::placeholder {
+  padding-left: 10%;
+  color: #f3faff;
+}
+
+.commentsSection form textarea {
+  border: none;
+  background-color: #03697c;
+  border: 2px solid #08fded;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 5%;
+}
+
+.commentsSection form textarea::-webkit-input-placeholder {
+  padding-left: 2%;
+  padding-top: 2%;
+  color: #f3faff;
+}
+
+.commentsSection form textarea:-ms-input-placeholder {
+  padding-left: 2%;
+  padding-top: 2%;
+  color: #f3faff;
+}
+
+.commentsSection form textarea::-ms-input-placeholder {
+  padding-left: 2%;
+  padding-top: 2%;
+  color: #f3faff;
+}
+
+.commentsSection form textarea::placeholder {
+  padding-left: 2%;
+  padding-top: 2%;
+  color: #f3faff;
+}
+
+.commentsSection form button {
+  width: 100%;
+  padding: 5px 0;
 }
 
 footer {
@@ -576,6 +651,91 @@ footer {
   font-size: 20px;
   line-height: 28px;
   padding: 10px 0;
+}
+
+.contactHeader {
+  width: 100%;
+  background-image: url("../assets/contact-header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #f3faff;
+  height: 100vh;
+}
+
+.contactHeader .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  max-width: 80%;
+}
+
+.contactHeader .mainWrapper .contactContent {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderNav {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a {
+  color: #f3faff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #08fded;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderTitle {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderTitle h1 {
+  width: 100%;
+  font-size: 121.5px;
+  line-height: 125.6px;
+  font-family: 'Walter Turncoat', cursive;
+  padding-top: 5%;
 }
 
 h1, h2, h3, ul, li, p {

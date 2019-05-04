@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header class="blogHeader">
         <div class="mainWrapper">
-            <div class="blogHeader">
+            <div class="blogContent">
                 <nav class="blogHeaderNav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -98,8 +98,9 @@
                     <label for="email" class="visuallyHidden"></label>
                     <input type="email" placeholder="Email address">
                 </div>
-                <label for="comments"></label>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                <label for="comments" class="visuallyHidden"></label>
+
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Comment"></textarea>
 
                 <button>Post Comment</button>
             </form>
