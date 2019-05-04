@@ -2,7 +2,7 @@
     width: 100%;
     background-image: url("../assets/contact-header.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     color: $textColor;
     height: 100vh;
     // display: flex;
@@ -62,8 +62,150 @@
                     // border: 2px solid red;
                     font-family: 'Walter Turncoat', cursive;
                     padding-top: 5%;
+                    white-space: nowrap;
                 }
             }
         }
     }
+}
+
+.contactSection {
+    width: 100%;
+    // padding: 6% 0;
+    padding-bottom: 5%; 
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-around;
+
+    .contactContainer {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        // flex-direction: column;
+        align-items: center;
+        // border: 2px solid yellow;
+
+        .contactInfo {
+            width: 70%;
+            flex-direction: column;
+            align-items: center;
+            // border: 2px solid hotpink;
+
+            .contactIcons {
+                // border: 2px solid coral;
+                width: 50%;
+                margin-bottom: 5%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li a {
+                        color: $textColor;
+                        @include pStyles;
+                        font-size: 26px;
+                    }
+                }
+                
+            }
+
+            .contactText {
+                display: flex;
+                flex-direction: column;
+                // border: 2px solid orange;
+
+                p {
+                    color: $textColor;
+                    @include pStyles;
+                }
+
+                p:first-child {
+                    margin-bottom: 8%;
+                }
+                
+            }
+
+        }
+        
+    }
+
+    .contactForm {
+        width: 60%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            // align-items: flex-start;
+            width: 100%;
+            // border: 2px solid yellow;
+            margin-right: 4%;
+            margin-bottom: 6%;
+            padding: 5% 5%;
+            margin-top: -10%;
+            margin-left: -10%;
+            background-color: $secondaryColor;
+            box-shadow: 15px 15px 0 1px rgb(8, 253, 237);
+            
+
+            .formFields {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 5%;
+
+                input[type="text"] {
+                    width: 45%;
+                    height: 50px;
+                    border: none;
+                    background-color: $secondaryColor;
+                    border-bottom: 2px solid $textColor;
+                    @include pStyles;
+                }
+
+                input[type="email"] {
+                    width: 45%;
+                    height: 50px;
+                    border: none;
+                    background-color: $secondaryColor;
+                    border-bottom: 2px solid $textColor;
+                    @include pStyles;
+                }
+
+                input::placeholder {
+                    padding-left: 10%;
+                    color: $textColor;
+                    // @include pStyles;
+                }
+            }
+
+            textarea {
+                border: none;
+                background-color: $secondaryColor;
+                border: 2px solid $textColor;
+                @include pStyles;
+                margin-bottom: 5%;
+                resize: none;
+            }
+
+            textarea::placeholder {
+                padding-left: 2%;
+                padding-top: 2%;
+                color: $textColor;
+            }
+
+            button {
+                width: 100%;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: $tertiaryColor;
+    color: $textColor;
+    text-align: center;
+    @include pStyles;
+    padding: 10px 0;
 }

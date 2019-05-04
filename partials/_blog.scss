@@ -2,7 +2,7 @@
     width: 100%;
     background-image: url("../assets/blog-header.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: $textColor;
     height: 100vh;
     // display: flex;
@@ -271,6 +271,7 @@
             border: 2px solid $accentColor;
             @include pStyles;
             margin-bottom: 5%;
+            resize: none;
         }
 
         textarea::placeholder {
