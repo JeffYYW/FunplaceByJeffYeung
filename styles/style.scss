@@ -68,31 +68,40 @@ button {
                 // justify-content: center;    
                 align-items: flex-start;
 
+                span {
+                    margin-top: 3%;
+                }
+
                 i {
                     // border: 2px solid red;
-                    font-size: 32px;
-                    border-radius: 50%;
-                    background-color: $accentColor;
-                    padding: 2%;
+                    // font-size: 32px;
+                    // border-radius: 50%;
+                    // background-color: $accentColor;
+                    // padding: 2%;
                     color: $secondaryColor;
                     // align-self: flex-start;
-                    margin-top: 4%; 
+                    // margin-top: 10%; 
                 }
 
-                .fa-users {
-                    padding: 3% 2.5%;
-                    font-size: 24px;
+                .icon-background {
+                    color: $accentColor;
                 }
 
-                .fa-file {
-                    padding: 2% 3%;
-                }
+                // .fa-users {
+                //     padding: 3% 2.5%;
+                //     font-size: 24px;
+                // }
 
-                .fa-phone {
-                    font-size: 24px;
-                }
+                // .fa-file {
+                //     padding: 2% 3%;
+                // }
+
+                // .fa-phone {
+                //     font-size: 24px;
+                // }
 
                 .fourLinksTitle {
+                    width: 80%;
                     display: flex;
                     // align-items: center;
                     flex-direction: column;
@@ -137,7 +146,7 @@ button {
             .ourProgramsImg {
                 width: 52.5%;
                 margin-left: -12.5%;
-                box-shadow: 15px 15px 0 1px rgba(8, 253, 237, 1);
+                box-shadow: 15px 15px 0 1px rgb(8, 253, 237);
                 margin-top: -10%;
             }
 
@@ -168,7 +177,7 @@ button {
             .newLocationImg {
                 width: 52.5%;
                 margin-right: -12.5%;
-                box-shadow: -15px 15px 0 1px rgba(8, 253, 237, 1);
+                box-shadow: -15px 15px 0 1px rgb(8, 253, 237);
                 margin-bottom: -10%;
             }
 
@@ -246,7 +255,7 @@ button {
 
         .eventsImg {
             width: 30%;
-            box-shadow: -15px 15px 0 1px rgba(8, 253, 237, 1);
+            box-shadow: -15px 15px 0 1px rgb(8, 253, 237);
         }
 
         .eventsContent {
