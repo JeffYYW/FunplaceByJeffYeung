@@ -263,6 +263,410 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           transform: translate(20%, 50%) scale(1.1);
 }
 
+.fourLinks {
+  padding: 15% 0 5% 0;
+  width: 100%;
+  background-color: #03697c;
+  color: #f3faff;
+}
+
+.fourLinks .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText span {
+  margin-top: 3%;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText i {
+  color: #474bb5;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .icon-background {
+  color: #08fded;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2%;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 45px;
+  line-height: 99.8px;
+}
+
+.fourLinks .mainWrapper .fourLinksContainer .fourLinksText p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.quadrantSection {
+  width: 100%;
+  background-color: #474bb5;
+  font-family: 'Roboto', sans-serif;
+  color: #f3faff;
+}
+
+.quadrantSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quadrantSection .mainWrapper .ourPrograms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
+  width: 52.5%;
+  margin-left: -12.5%;
+  -webkit-box-shadow: 15px 15px 0 1px #08fded;
+          box-shadow: 15px 15px 0 1px #08fded;
+  margin-top: -10%;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+}
+
+.quadrantSection .mainWrapper .ourPrograms .ourProgramsText p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.quadrantSection .mainWrapper .newLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 0;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationImg {
+  width: 52.5%;
+  margin-right: -12.5%;
+  -webkit-box-shadow: -15px 15px 0 1px #08fded;
+          box-shadow: -15px 15px 0 1px #08fded;
+  margin-bottom: -10%;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText h2 {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
+}
+
+.quadrantSection .mainWrapper .newLocation .newLocationText p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.roadTripsSection {
+  width: 100%;
+  background-color: #03697c;
+  color: #f3faff;
+  padding: 13% 5% 8% 5%;
+}
+
+.roadTripsSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent h2 {
+  font-size: 40px;
+}
+
+.roadTripsSection .mainWrapper .roadTripsContent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.swimmingImg {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eventsSection {
+  width: 100%;
+  background-color: #03697c;
+  padding: 10% 0 5% 0;
+}
+
+.eventsSection .mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventsSection .mainWrapper .eventsImg {
+  width: 30%;
+  -webkit-box-shadow: -15px 15px 0 1px #08fded;
+          box-shadow: -15px 15px 0 1px #08fded;
+}
+
+.eventsSection .mainWrapper .eventsContent {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #f3faff;
+}
+
+.eventsSection .mainWrapper .eventsContent h2 {
+  font-size: 40px;
+  font-family: 'Walter Turncoat', cursive;
+}
+
+.eventsSection .mainWrapper .eventsContent p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 5% 0;
+}
+
+.gallerySection {
+  width: 100%;
+  background-color: #474bb5;
+  padding: 5% 0;
+}
+
+.gallerySection .mainWrapper .galleryContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallerySection .mainWrapper .galleryContainer .galleryItem {
+  width: 31%;
+}
+
+footer {
+  width: 100%;
+  background-color: #044779;
+  color: #f3faff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px 0;
+}
+
+@media (max-width: 1250px) {
+  .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
+    margin: initial;
+  }
+  .quadrantSection .mainWrapper .newLocation .newLocationImg {
+    margin: initial;
+  }
+}
+
+@media (max-width: 1020px) {
+  .fourLinks {
+    padding-bottom: 10%;
+  }
+  .fourLinks .mainWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fourLinks .mainWrapper .fourLinksContainer {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .quadrantSection {
+    padding-bottom: 10%;
+  }
+  .quadrantSection .mainWrapper .ourPrograms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: initial;
+  }
+  .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
+    width: 100%;
+    -webkit-transform: translate(5%, -10%);
+            transform: translate(5%, -10%);
+  }
+  .quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .quadrantSection .mainWrapper .newLocation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: initial;
+  }
+  .quadrantSection .mainWrapper .newLocation .newLocationImg {
+    -webkit-transform: translate(-5%, 10%);
+            transform: translate(-5%, 10%);
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 10%;
+  }
+  .quadrantSection .mainWrapper .newLocation .newLocationText {
+    width: 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .gallerySection .mainWrapper .galleryContainer .galleryItem {
+    width: 48%;
+  }
+  .gallerySection .mainWrapper .galleryContainer .galleryItem:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .gallerySection .mainWrapper .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallerySection .mainWrapper .galleryContainer .galleryItem {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  .gallerySection .mainWrapper .galleryContainer .galleryItem:first-child {
+    display: block;
+  }
+}
+
 .blogHeader {
   width: 100%;
   background-image: url("../assets/blog-header.jpg");
@@ -443,9 +847,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .blogSection .activities .activitiesImg {
-  margin-right: -9%;
   -webkit-box-shadow: -15px 15px 0 1px #08fded;
           box-shadow: -15px 15px 0 1px #08fded;
+  margin-right: -9%;
   margin-right: 0%;
   margin-left: 30px;
 }
@@ -987,9 +1391,12 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 5% 0 10% 0;
+    padding: 10% 0 5% 0;
   }
   .contactSection .contactContainer {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     width: 80%;
   }
   .contactSection .contactContainer .contactInfo {
@@ -998,6 +1405,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    margin-top: 5%;
   }
   .contactSection .contactContainer .contactInfo .contactIcons {
     width: 60%;
@@ -1073,315 +1481,5 @@ button {
 .mainWrapper {
   max-width: 80%;
   margin: 0 auto;
-}
-
-.fourLinks {
-  padding: 15% 0 5% 0;
-  width: 100%;
-  background-color: #03697c;
-  color: #f3faff;
-}
-
-.fourLinks .mainWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText span {
-  margin-top: 3%;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText i {
-  color: #474bb5;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .icon-background {
-  color: #08fded;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 2%;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle h2 {
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 45px;
-  line-height: 99.8px;
-}
-
-.fourLinks .mainWrapper .fourLinksContainer .fourLinksText p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.quadrantSection {
-  width: 100%;
-  background-color: #474bb5;
-  font-family: 'Roboto', sans-serif;
-  color: #f3faff;
-}
-
-.quadrantSection .mainWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.quadrantSection .mainWrapper .ourPrograms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5% 0;
-}
-
-.quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
-  width: 52.5%;
-  margin-left: -12.5%;
-  -webkit-box-shadow: 15px 15px 0 1px #08fded;
-          box-shadow: 15px 15px 0 1px #08fded;
-  margin-top: -10%;
-}
-
-.quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.quadrantSection .mainWrapper .ourPrograms .ourProgramsText h2 {
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 40px;
-}
-
-.quadrantSection .mainWrapper .ourPrograms .ourProgramsText p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 5% 0;
-}
-
-.quadrantSection .mainWrapper .newLocation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5% 0;
-}
-
-.quadrantSection .mainWrapper .newLocation .newLocationImg {
-  width: 52.5%;
-  margin-right: -12.5%;
-  -webkit-box-shadow: -15px 15px 0 1px #08fded;
-          box-shadow: -15px 15px 0 1px #08fded;
-  margin-bottom: -10%;
-}
-
-.quadrantSection .mainWrapper .newLocation .newLocationText {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: right;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.quadrantSection .mainWrapper .newLocation .newLocationText h2 {
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 40px;
-}
-
-.quadrantSection .mainWrapper .newLocation .newLocationText p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 5% 0;
-}
-
-.roadTripsSection {
-  width: 100%;
-  background-color: #03697c;
-  color: #f3faff;
-  padding: 13% 5% 8% 5%;
-}
-
-.roadTripsSection .mainWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.roadTripsSection .mainWrapper .roadTripsContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.roadTripsSection .mainWrapper .roadTripsContent h2 {
-  font-size: 40px;
-}
-
-.roadTripsSection .mainWrapper .roadTripsContent p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 5% 0;
-}
-
-.swimmingImg {
-  width: 100%;
-  height: 70vh;
-  background-image: url("../assets/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.eventsSection {
-  width: 100%;
-  background-color: #03697c;
-  padding: 10% 0 5% 0;
-}
-
-.eventsSection .mainWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.eventsSection .mainWrapper .eventsImg {
-  width: 30%;
-  -webkit-box-shadow: -15px 15px 0 1px #08fded;
-          box-shadow: -15px 15px 0 1px #08fded;
-}
-
-.eventsSection .mainWrapper .eventsContent {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: #f3faff;
-}
-
-.eventsSection .mainWrapper .eventsContent h2 {
-  font-size: 40px;
-  font-family: 'Walter Turncoat', cursive;
-}
-
-.eventsSection .mainWrapper .eventsContent p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 5% 0;
-}
-
-.gallerySection {
-  width: 100%;
-  background-color: #474bb5;
-  padding: 5% 0;
-}
-
-.gallerySection .mainWrapper .galleryContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.gallerySection .mainWrapper .galleryContainer .galleryItem {
-  width: 31%;
-}
-
-footer {
-  width: 100%;
-  background-color: #044779;
-  color: #f3faff;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
