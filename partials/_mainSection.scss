@@ -173,6 +173,7 @@
 
             h2 {
                 font-size: 40px;
+                text-align: center;
             }
 
             p {
@@ -257,6 +258,10 @@ footer {
     padding: 10px 0;
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
+
 @media (max-width: 1250px) {
     .quadrantSection {
         .mainWrapper {
@@ -271,6 +276,10 @@ footer {
                 }
             }
         }
+    }
+
+    .fourLinks {
+        padding-top: 5%;
     }
 }
 
@@ -293,38 +302,16 @@ footer {
         padding-bottom: 10%;
         .mainWrapper {
             .ourPrograms {
-                // display: flex;
                 flex-direction: column;
-                // justify-content: space-between;
-                // align-items: center;
-                // padding: 5% 0;
                 padding: initial;
-                // align-items: left;
 
                 .ourProgramsImg {
-                    // margin: initial;
                     width: 100%;
                     transform: translate(5%, -10%);
-                    // margin-left: -12.5%;
-                    // box-shadow: 15px 15px 0 1px rgb(8, 253, 237);
-                    // margin-top: -10%;
                 }
                 .ourProgramsText {
                     width: 100%;
-                    
                     margin-bottom: 5%;
-                //     display: flex;
-                //     flex-direction: column;
-
-                //     h2 {
-                //         font-family: 'Walter Turncoat', cursive;
-                //         font-size: 40px;
-                //     }
-
-                //     p {
-                //     @include pStyles;
-                //     padding: 5% 0;
-                //     }
                 }
             }
             .newLocation {
@@ -332,7 +319,6 @@ footer {
                 padding: initial;
 
                 .newLocationImg {
-                    // margin: initial;
                     transform: translate(-5%, 10%);
                     width: 100%;
                     order: 3;
@@ -342,8 +328,40 @@ footer {
                 .newLocationText {
                     width: 100%;
                     order: 4;
-
                 }
+            }
+        }
+    }
+
+    .eventsSection {
+        // padding: 10% 0 5% 0;
+
+        .mainWrapper {
+            display: flex;
+            // justify-content: space-between;
+            flex-direction: column;
+            // align-items: center;
+
+            .eventsImg {
+                width: 60%;
+            }
+
+            .eventsContent {
+                margin-top: 10%;
+                width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                align-items: center;
+
+                // h2 {
+                //     font-size: 40px;
+                //     font-family: 'Walter Turncoat', cursive;
+                // }
+
+                // p {
+                //     @include pStyles;
+                //     padding: 5% 0;
+                // }
             }
         }
     }

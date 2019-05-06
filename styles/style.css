@@ -218,11 +218,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding-top: 5%;
 }
 
-.mainHeader .mainWrapper .headerContent .headerNav ul li a:hover {
-  padding-bottom: 5px;
-  border-bottom: 2px solid #08fded;
-}
-
 .mainHeader .mainWrapper .headerContent .headerNav ul {
   width: 75%;
   display: -webkit-box;
@@ -241,6 +236,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   letter-spacing: 1px;
 }
 
+.mainHeader .mainWrapper .headerContent .headerNav ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #08fded;
+}
+
 .mainHeader .mainWrapper .headerContent .headerTitle {
   height: 80%;
   display: -webkit-box;
@@ -249,6 +249,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 5;
 }
 
 .mainHeader .mainWrapper .headerContent .headerTitle h1 {
@@ -261,6 +262,31 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .mainHeader .mainWrapper .headerImg {
   -webkit-transform: translate(20%, 50%) scale(1.1);
           transform: translate(20%, 50%) scale(1.1);
+}
+
+@media (max-width: 1100px) {
+  .mainHeader .mainWrapper .headerContent {
+    width: 100%;
+  }
+  .mainHeader .mainWrapper .headerContent .headerNav ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mainHeader .mainWrapper .headerContent .headerTitle h1 {
+    padding-top: 0;
+    padding-bottom: 10%;
+    text-align: center;
+  }
+  .mainHeader .mainWrapper .headerImg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeader .mainWrapper .headerContent .headerTitle h1 {
+    padding-bottom: 20%;
+    font-size: 110px;
+  }
 }
 
 .fourLinks {
@@ -477,6 +503,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .roadTripsSection .mainWrapper .roadTripsContent h2 {
   font-size: 40px;
+  text-align: center;
 }
 
 .roadTripsSection .mainWrapper .roadTripsContent p {
@@ -576,12 +603,18 @@ footer {
   padding: 10px 0;
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 @media (max-width: 1250px) {
   .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
     margin: initial;
   }
   .quadrantSection .mainWrapper .newLocation .newLocationImg {
     margin: initial;
+  }
+  .fourLinks {
+    padding-top: 5%;
   }
 }
 
@@ -642,6 +675,25 @@ footer {
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .eventsSection .mainWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .eventsSection .mainWrapper .eventsImg {
+    width: 60%;
+  }
+  .eventsSection .mainWrapper .eventsContent {
+    margin-top: 10%;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .gallerySection .mainWrapper .galleryContainer .galleryItem {
     width: 48%;
