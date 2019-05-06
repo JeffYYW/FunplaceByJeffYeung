@@ -987,6 +987,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 5% 0 10% 0;
   }
   .contactSection .contactContainer {
     width: 80%;
@@ -999,14 +1000,41 @@ footer {
     text-align: center;
   }
   .contactSection .contactContainer .contactInfo .contactIcons {
-    width: 80%;
+    width: 60%;
     margin: 5% auto;
+  }
+  .contactSection .contactContainer .contactInfo .contactText {
+    margin-bottom: 5%;
   }
   .contactSection .contactForm {
     width: 80%;
   }
   .contactSection .contactForm form {
     margin: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .contactSection .contactContainer .contactInfo .contactIcons {
+    width: 90%;
+  }
+  .contactSection .contactForm {
+    width: 85%;
+  }
+  .contactSection .contactForm form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .contactSection .contactForm form .formFields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactSection .contactForm form .formFields input[type="text"],
+  .contactSection .contactForm form .formFields input[type="email"] {
+    width: 100%;
+    margin-bottom: 5%;
   }
 }
 

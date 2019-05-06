@@ -276,6 +276,7 @@ footer {
     .contactSection {
         flex-direction: column;
         align-items: center;
+        padding: 5% 0 10% 0;
 
         .contactContainer {
             width: 80%;
@@ -286,9 +287,13 @@ footer {
                 text-align: center;
 
                 .contactIcons {
-                    width: 80%;
+                    width: 60%;
                     // text-align: center;
                     margin: 5% auto;
+                }
+
+                .contactText {
+                    margin-bottom: 5%;
                 }
             }
         }
@@ -302,6 +307,36 @@ footer {
                 // margin-top: 0;
                 // margin-left: 0;
                 margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 475px) {
+
+    .contactSection {
+        .contactContainer {
+            .contactInfo {
+                .contactIcons {
+                    width: 90%;
+                }
+            }
+        }
+
+        .contactForm {
+            width: 85%;
+            form {
+                box-shadow: none;
+
+                .formFields {
+                    flex-direction: column;
+
+                    input[type="text"],
+                    input[type="email"] {
+                        width: 100%;
+                        margin-bottom: 5%;
+                    }
+                }
             }
         }
     }
