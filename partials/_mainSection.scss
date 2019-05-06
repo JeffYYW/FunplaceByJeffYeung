@@ -326,6 +326,7 @@ footer {
                 }
 
                 .newLocationText {
+                    margin-top: 5%;
                     width: 100%;
                     order: 4;
                 }
@@ -334,7 +335,7 @@ footer {
     }
 
     .eventsSection {
-        // padding: 10% 0 5% 0;
+        padding: 10% 0 10% 0;
 
         .mainWrapper {
             display: flex;
@@ -381,11 +382,41 @@ footer {
     }
 }
 
+@media (max-width: 400px) {
+    .fourLinks {
+        .mainWrapper {
+            .fourLinksContainer {
+                .fourLinksText {
+                    
+                    span {
+                        display: none;
+                    }
+                    .fourLinksTitle {
+                        width: 100%;
+                        // justify-content: center;
+                        align-items: center;
+                        h2 {
+                            font-size: 32px;
+                            line-height: 80px;
+                            white-space: nowrap;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 320px) {
     .gallerySection {
         .mainWrapper {
             .galleryContainer {
                 flex-direction: column;
+                align-items: center;
+                padding: 5% 0;
 
                 .galleryItem {
                     width: 80%;

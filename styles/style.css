@@ -289,6 +289,41 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
 }
 
+@media (max-width: 600px) {
+  .mainHeader .mainWrapper .headerContent .headerTitle {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainHeader .mainWrapper .headerContent .headerTitle h1 {
+    padding-top: 20%;
+    padding-bottom: 0;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 475px) {
+  .mainHeader .mainWrapper .headerContent .headerNav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainHeader .mainWrapper .headerContent .headerNav ul li {
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .mainHeader .mainWrapper .headerContent .headerTitle {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainHeader .mainWrapper .headerContent .headerTitle h1 {
+    padding-top: 40%;
+    font-size: 50px;
+  }
+}
+
 .fourLinks {
   padding: 15% 0 5% 0;
   width: 100%;
@@ -671,10 +706,14 @@ footer {
     margin-bottom: 10%;
   }
   .quadrantSection .mainWrapper .newLocation .newLocationText {
+    margin-top: 5%;
     width: 100%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+  }
+  .eventsSection {
+    padding: 10% 0 10% 0;
   }
   .eventsSection .mainWrapper {
     display: -webkit-box;
@@ -703,12 +742,36 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+  .fourLinks .mainWrapper .fourLinksContainer .fourLinksText span {
+    display: none;
+  }
+  .fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle h2 {
+    font-size: 32px;
+    line-height: 80px;
+    white-space: nowrap;
+  }
+  .fourLinks .mainWrapper .fourLinksContainer .fourLinksText .fourLinksTitle p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 320px) {
   .gallerySection .mainWrapper .galleryContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0;
   }
   .gallerySection .mainWrapper .galleryContainer .galleryItem {
     width: 80%;
@@ -1475,6 +1538,16 @@ footer {
 }
 
 @media (max-width: 475px) {
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul li {
+    width: 50%;
+    text-align: center;
+    margin-top: 5%;
+  }
   .contactSection .contactContainer .contactInfo .contactIcons {
     width: 90%;
   }
