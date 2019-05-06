@@ -67,9 +67,10 @@
         }
 
         .headerImg {
-            width: auto;
-            margin-top: 20%;
-            margin-right: -12.5%;
+            // width: auto;
+            // margin-top: 20%;
+            // margin-right: -12.5%;
+            transform: translate(20%, 50%) scale(1.1);
         }
     }
 }

@@ -259,9 +259,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .mainHeader .mainWrapper .headerImg {
-  width: auto;
-  margin-top: 20%;
-  margin-right: -12.5%;
+  -webkit-transform: translate(20%, 50%) scale(1.1);
+          transform: translate(20%, 50%) scale(1.1);
 }
 
 .blogHeader {
@@ -365,6 +364,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .blogSection .blogAside {
   width: 28%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,8 +373,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #474bb5;
-  margin-bottom: 15%;
   margin-left: 5%;
+  padding-bottom: 1%;
 }
 
 .blogSection .blogAside .asideImg {
@@ -411,6 +411,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+}
+
+.blogSection .blogAside .asideText li {
+  padding-left: 7%;
+  position: relative;
+}
+
+.blogSection .blogAside .asideText li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #08fded;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
 }
 
 .blogSection .activities {
@@ -732,6 +749,7 @@ footer {
   font-family: 'Walter Turncoat', cursive;
   padding-top: 5%;
   white-space: nowrap;
+  text-align: center;
 }
 
 .contactSection {
@@ -936,6 +954,62 @@ footer {
   padding: 10px 0;
 }
 
+@media (max-width: 1020px) {
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
+    width: 100%;
+  }
+  .contactSection .contactContainer .contactInfo .contactIcons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .contactHeader .mainWrapper .contactContent .contactHeaderTitle h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactHeader .mainWrapper .contactContent {
+    width: 100%;
+  }
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
+    width: 100%;
+  }
+  .contactHeader .mainWrapper .contactContent .contactHeaderTitle h1 {
+    white-space: initial;
+  }
+  .contactSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactSection .contactContainer {
+    width: 80%;
+  }
+  .contactSection .contactContainer .contactInfo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .contactSection .contactContainer .contactInfo .contactIcons {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .contactSection .contactForm {
+    width: 80%;
+  }
+  .contactSection .contactForm form {
+    margin: 0;
+  }
+}
+
 h1, h2, h3, ul, li, p {
   margin: 0;
   padding: 0;
@@ -964,7 +1038,6 @@ button {
   line-height: 41.6px;
   text-align: center;
   padding: 10px 15px;
-  width: 34%;
   white-space: nowrap;
   color: #474bb5;
 }
@@ -1194,10 +1267,6 @@ button {
   padding: 5% 0;
 }
 
-.roadTripsSection .mainWrapper .roadTripsContent button {
-  width: 25%;
-}
-
 .swimmingImg {
   width: 100%;
   height: 70vh;
@@ -1239,6 +1308,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: #f3faff;
 }
 
@@ -1252,10 +1324,6 @@ button {
   font-size: 20px;
   line-height: 28px;
   padding: 5% 0;
-}
-
-.eventsSection .mainWrapper .eventsContent button {
-  width: 30%;
 }
 
 .gallerySection {
