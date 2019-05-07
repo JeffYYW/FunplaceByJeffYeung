@@ -34,9 +34,14 @@
                    @include listLinks;
                 }
 
-                li a:hover {
+                li a:hover,
+                li a:focus {
                     padding-bottom: 5px;
                     border-bottom: 2px solid $accentColor;
+                }
+
+                li a:active {
+                    color: coral;
                 }
             }
 
@@ -86,6 +91,11 @@
                         @include pStyles;
                         color: $textColor;  
                         font-size: 26px;
+                    }
+
+                    li a:hover,
+                    li a:focus {
+                        color: $accentColor;
                     }
                 } 
             }
@@ -142,6 +152,11 @@
                     border-bottom: 2px solid $textColor;
                 }
 
+                input[type="text"]:focus,
+                input[type="email"]:focus {
+                    border: 2px solid $accentColor;
+                }
+
                 input::placeholder {
                     padding-left: 10%;
                     color: $textColor;
@@ -156,6 +171,10 @@
                 background-color: $secondaryColor;
                 border: 2px solid $textColor;
                 resize: none;
+            }
+
+            textarea:focus {
+                border: 2px solid $accentColor;
             }
 
             textarea::placeholder {

@@ -236,9 +236,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   letter-spacing: 1px;
 }
 
-.mainHeader .mainWrapper .headerContent .headerNav ul li a:hover {
+.mainHeader .mainWrapper .headerContent .headerNav ul li a:hover,
+.mainHeader .mainWrapper .headerContent .headerNav ul li a:focus {
   padding-bottom: 5px;
   border-bottom: 2px solid #08fded;
+}
+
+.mainHeader .mainWrapper .headerContent .headerNav ul li a:active {
+  color: coral;
 }
 
 .mainHeader .mainWrapper .headerContent .headerTitle {
@@ -269,8 +274,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 ***********************************************************/
 @media (min-width: 1600px) {
   .mainHeader .mainWrapper .headerImg {
-    -webkit-transform: translate(19%, 45%) scale(1.1);
-            transform: translate(19%, 45%) scale(1.1);
+    -webkit-transform: translate(20%, 45%) scale(1.1);
+            transform: translate(20%, 45%) scale(1.1);
   }
 }
 
@@ -850,9 +855,14 @@ footer {
   letter-spacing: 1px;
 }
 
-.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a:hover {
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a:hover,
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a:focus {
   padding-bottom: 5px;
   border-bottom: 2px solid #08fded;
+}
+
+.blogHeader .mainWrapper .blogContent .blogHeaderNav ul li a:active {
+  color: coral;
 }
 
 .blogHeader .mainWrapper .blogContent .blogHeaderTitle {
@@ -1125,6 +1135,11 @@ footer {
   border-bottom: 2px solid #08fded;
 }
 
+.commentsSection form .formFields input[type="text"]:focus,
+.commentsSection form .formFields input[type="email"]:focus {
+  border: 2px solid coral;
+}
+
 .commentsSection form .formFields input::-webkit-input-placeholder {
   padding-left: 10%;
   color: #f3faff;
@@ -1156,6 +1171,10 @@ footer {
   background-color: #03697c;
   border: 2px solid #08fded;
   resize: none;
+}
+
+.commentsSection form textarea:focus {
+  border: 2px solid coral;
 }
 
 .commentsSection form textarea::-webkit-input-placeholder {
@@ -1379,9 +1398,14 @@ footer {
   letter-spacing: 1px;
 }
 
-.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a:hover {
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a:hover,
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a:focus {
   padding-bottom: 5px;
   border-bottom: 2px solid #08fded;
+}
+
+.contactHeader .mainWrapper .contactContent .contactHeaderNav ul li a:active {
+  color: coral;
 }
 
 .contactHeader .mainWrapper .contactContent .contactHeaderTitle {
@@ -1465,6 +1489,11 @@ footer {
   font-size: 26px;
 }
 
+.contactSection .contactContainer .contactInfo .contactIcons ul li a:hover,
+.contactSection .contactContainer .contactInfo .contactIcons ul li a:focus {
+  color: #08fded;
+}
+
 .contactSection .contactContainer .contactInfo .contactText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1542,6 +1571,11 @@ footer {
   border-bottom: 2px solid #f3faff;
 }
 
+.contactSection .contactForm form .formFields input[type="text"]:focus,
+.contactSection .contactForm form .formFields input[type="email"]:focus {
+  border: 2px solid #08fded;
+}
+
 .contactSection .contactForm form .formFields input::-webkit-input-placeholder {
   padding-left: 10%;
   color: #f3faff;
@@ -1572,6 +1606,10 @@ footer {
   background-color: #474bb5;
   border: 2px solid #f3faff;
   resize: none;
+}
+
+.contactSection .contactForm form textarea:focus {
+  border: 2px solid #08fded;
 }
 
 .contactSection .contactForm form textarea::-webkit-input-placeholder {
@@ -1737,6 +1775,15 @@ button {
   line-height: 41.6px;
   text-align: center;
   white-space: nowrap;
+}
+
+button:hover,
+button:focus {
+  background-color: #f3faff;
+}
+
+button:active {
+  background-color: coral;
 }
 
 .mainWrapper {

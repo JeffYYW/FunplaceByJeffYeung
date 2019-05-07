@@ -31,9 +31,14 @@
                    @include listLinks;
                 }
 
-                    li a:hover {
+                    li a:hover,
+                    li a:focus  {
                         padding-bottom: 5px;
                         border-bottom: 2px solid $accentColor;
+                    }
+
+                    li a:active {
+                        color: coral;
                     }
                 }
             }
@@ -67,7 +72,7 @@
     .mainHeader {
         .mainWrapper {
             .headerImg {
-                transform: translate(19%, 45%) scale(1.1);
+                transform: translate(20%, 45%) scale(1.1);
             }
         }
     }

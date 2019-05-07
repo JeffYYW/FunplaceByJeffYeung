@@ -5,9 +5,6 @@
 @import "../partials/blog";
 @import "../partials/contact";
 
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Walter Turncoat', cursive;
-
 h1, h2, h3, ul, li, p {
     margin: 0;
     padding: 0;
@@ -39,11 +36,19 @@ button {
     white-space: nowrap;
 }
 
+button:hover,
+button:focus {
+    background-color: $textColor;
+}
+
+button:active {
+    background-color: coral;
+}
+
 .mainWrapper {
     max-width: 80%;
     margin: 0 auto;
 }
-
 
 
 
