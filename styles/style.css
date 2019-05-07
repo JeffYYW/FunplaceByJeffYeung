@@ -182,7 +182,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .mainHeader {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/home-header.jpg");
+  background-image: url("../assets/homeHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3faff;
@@ -264,6 +264,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           transform: translate(20%, 50%) scale(1.1);
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 @media (min-width: 1600px) {
   .mainHeader .mainWrapper .headerImg {
     -webkit-transform: translate(19%, 45%) scale(1.1);
@@ -332,8 +335,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .fourLinks {
-  padding: 15% 0 5% 0;
   width: 100%;
+  padding: 15% 0 5% 0;
   background-color: #03697c;
   color: #f3faff;
 }
@@ -405,8 +408,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .quadrantSection {
   width: 100%;
   background-color: #474bb5;
-  font-family: 'Roboto', sans-serif;
   color: #f3faff;
+  font-family: 'Roboto', sans-serif;
 }
 
 .quadrantSection .mainWrapper {
@@ -434,10 +437,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
   width: 52.5%;
+  margin-top: -10%;
   margin-left: -12.5%;
   -webkit-box-shadow: 15px 15px 0 1px #08fded;
           box-shadow: 15px 15px 0 1px #08fded;
-  margin-top: -10%;
 }
 
 .quadrantSection .mainWrapper .ourPrograms .ourProgramsText {
@@ -482,9 +485,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .quadrantSection .mainWrapper .newLocation .newLocationImg {
   width: 52.5%;
   margin-right: -12.5%;
+  margin-bottom: -10%;
   -webkit-box-shadow: -15px 15px 0 1px #08fded;
           box-shadow: -15px 15px 0 1px #08fded;
-  margin-bottom: -10%;
 }
 
 .quadrantSection .mainWrapper .newLocation .newLocationText {
@@ -496,10 +499,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  text-align: right;
 }
 
 .quadrantSection .mainWrapper .newLocation .newLocationText h2 {
@@ -603,8 +606,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .eventsSection .mainWrapper .eventsContent h2 {
-  font-size: 40px;
   font-family: 'Walter Turncoat', cursive;
+  font-size: 40px;
 }
 
 .eventsSection .mainWrapper .eventsContent p {
@@ -616,8 +619,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .gallerySection {
   width: 100%;
-  background-color: #474bb5;
   padding: 5% 0;
+  background-color: #474bb5;
 }
 
 .gallerySection .mainWrapper .galleryContainer {
@@ -635,14 +638,14 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 footer {
-  width: 100%;
-  background-color: #044779;
-  color: #f3faff;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+  width: 100%;
   padding: 10px 0;
+  background-color: #044779;
+  color: #f3faff;
+  text-align: center;
 }
 
 /***********************************************************
@@ -704,20 +707,20 @@ footer {
     padding: initial;
   }
   .quadrantSection .mainWrapper .newLocation .newLocationImg {
-    -webkit-transform: translate(-5%, 10%);
-            transform: translate(-5%, 10%);
     width: 100%;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     margin-bottom: 10%;
+    -webkit-transform: translate(-5%, 10%);
+            transform: translate(-5%, 10%);
   }
   .quadrantSection .mainWrapper .newLocation .newLocationText {
-    margin-top: 5%;
     width: 100%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
+    margin-top: 5%;
   }
   .eventsSection {
     padding: 10% 0 10% 0;
@@ -735,8 +738,8 @@ footer {
     width: 60%;
   }
   .eventsSection .mainWrapper .eventsContent {
-    margin-top: 10%;
     width: 100%;
+    margin-top: 10%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -792,7 +795,7 @@ footer {
 .blogHeader {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/blog-header.jpg");
+  background-image: url("../assets/blogHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3faff;
@@ -1181,12 +1184,15 @@ footer {
   font-size: 20px;
   line-height: 28px;
   width: 100%;
+  padding: 10px 0;
   background-color: #044779;
   color: #f3faff;
   text-align: center;
-  padding: 10px 0;
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 @media (max-width: 900px) {
   .blogHeader .mainWrapper .blogContent .blogHeaderNav ul {
     width: 100%;
@@ -1317,23 +1323,24 @@ footer {
 
 .contactHeader {
   width: 100%;
-  background-image: url("../assets/contact-header.jpg");
+  height: 100vh;
+  background-image: url("../assets/contactHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3faff;
-  height: 100vh;
 }
 
 .contactHeader .mainWrapper {
+  max-width: 80%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  max-width: 80%;
 }
 
 .contactHeader .mainWrapper .contactContent {
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1341,7 +1348,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .contactHeader .mainWrapper .contactContent .contactHeaderNav {
@@ -1404,13 +1410,13 @@ footer {
 
 .contactSection {
   width: 100%;
-  padding-bottom: 5%;
-  background-color: #03697c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 5%;
+  background-color: #03697c;
 }
 
 .contactSection .contactContainer {
@@ -1452,10 +1458,10 @@ footer {
 }
 
 .contactSection .contactContainer .contactInfo .contactIcons ul li a {
-  color: #f3faff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+  color: #f3faff;
   font-size: 26px;
 }
 
@@ -1470,10 +1476,10 @@ footer {
 }
 
 .contactSection .contactContainer .contactInfo .contactText p {
-  color: #f3faff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+  color: #f3faff;
 }
 
 .contactSection .contactContainer .contactInfo .contactText p:first-child {
@@ -1485,6 +1491,7 @@ footer {
 }
 
 .contactSection .contactForm form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1492,15 +1499,11 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  margin-right: 4%;
-  margin-bottom: 6%;
+  margin: -10% 4% 6% -10%;
   padding: 5% 5%;
-  margin-top: -10%;
-  margin-left: -10%;
-  background-color: #474bb5;
   -webkit-box-shadow: 15px 15px 0 1px #08fded;
           box-shadow: 15px 15px 0 1px #08fded;
+  background-color: #474bb5;
 }
 
 .contactSection .contactForm form .formFields {
@@ -1518,25 +1521,25 @@ footer {
 }
 
 .contactSection .contactForm form .formFields input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   width: 45%;
   height: 50px;
   border: none;
   background-color: #474bb5;
   border-bottom: 2px solid #f3faff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .contactSection .contactForm form .formFields input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   width: 45%;
   height: 50px;
   border: none;
   background-color: #474bb5;
   border-bottom: 2px solid #f3faff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .contactSection .contactForm form .formFields input::-webkit-input-placeholder {
@@ -1560,16 +1563,15 @@ footer {
 }
 
 .contactSection .contactForm form textarea {
-  border: none;
-  background-color: #474bb5;
-  border: 2px solid #f3faff;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 5%;
-  resize: none;
-  padding-left: 2%;
   padding-top: 2%;
+  padding-left: 2%;
+  background-color: #474bb5;
+  border: 2px solid #f3faff;
+  resize: none;
 }
 
 .contactSection .contactForm form textarea::-webkit-input-placeholder {
@@ -1594,16 +1596,19 @@ footer {
 }
 
 footer {
-  width: 100%;
-  background-color: #044779;
-  color: #f3faff;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
+  width: 100%;
   padding: 10px 0;
+  background-color: #044779;
+  color: #f3faff;
+  text-align: center;
 }
 
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 @media (max-width: 1020px) {
   .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
     width: 100%;
@@ -1640,18 +1645,18 @@ footer {
     padding: 10% 0 5% 0;
   }
   .contactSection .contactContainer {
+    width: 80%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 80%;
   }
   .contactSection .contactContainer .contactInfo {
     width: 100%;
+    margin-top: 5%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    margin-top: 5%;
   }
   .contactSection .contactContainer .contactInfo .contactIcons {
     width: 60%;
@@ -1676,8 +1681,8 @@ footer {
   }
   .contactHeader .mainWrapper .contactContent .contactHeaderNav ul li {
     width: 50%;
-    text-align: center;
     margin-top: 5%;
+    text-align: center;
   }
   .contactSection .contactContainer .contactInfo .contactIcons {
     width: 90%;
