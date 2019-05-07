@@ -181,22 +181,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .mainHeader {
   width: 100%;
+  height: 100vh;
   background-image: url("../assets/home-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3faff;
-  height: 100vh;
 }
 
 .mainHeader .mainWrapper {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
 }
 
 .mainHeader .mainWrapper .headerContent {
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +205,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .mainHeader .mainWrapper .headerContent .headerNav {
@@ -264,6 +264,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           transform: translate(20%, 50%) scale(1.1);
 }
 
+@media (min-width: 1600px) {
+  .mainHeader .mainWrapper .headerImg {
+    -webkit-transform: translate(19%, 45%) scale(1.1);
+            transform: translate(19%, 45%) scale(1.1);
+  }
+}
+
 @media (max-width: 1100px) {
   .mainHeader .mainWrapper .headerContent {
     width: 100%;
@@ -310,8 +317,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
   .mainHeader .mainWrapper .headerContent .headerNav ul li {
     width: 50%;
-    text-align: center;
     margin-top: 5%;
+    text-align: center;
   }
   .mainHeader .mainWrapper .headerContent .headerTitle {
     -webkit-box-align: start;
@@ -784,23 +791,24 @@ footer {
 
 .blogHeader {
   width: 100%;
+  height: 100vh;
   background-image: url("../assets/blog-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f3faff;
-  height: 100vh;
 }
 
 .blogHeader .mainWrapper {
+  max-width: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  max-width: 90%;
 }
 
 .blogHeader .mainWrapper .blogContent {
   width: 50%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +816,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
 }
 
 .blogHeader .mainWrapper .blogContent .blogHeaderNav {
@@ -869,16 +876,16 @@ footer {
 
 .blogSection {
   width: 100%;
-  background-color: #03697c;
-  padding: 6% 0 1% 0;
-  color: #f3faff;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
+  padding: 6% 0 1% 0;
+  background-color: #03697c;
+  color: #f3faff;
 }
 
 .blogSection .blogAside {
@@ -891,15 +898,15 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #474bb5;
   margin-left: 5%;
   padding-bottom: 1%;
+  background-color: #474bb5;
 }
 
 .blogSection .blogAside .asideImg {
-  margin-left: -18%;
-  margin-right: 4.5%;
   margin-top: -5%;
+  margin-right: 4.5%;
+  margin-left: -18%;
 }
 
 .blogSection .blogAside .asideText {
@@ -933,20 +940,19 @@ footer {
 }
 
 .blogSection .blogAside .asideText li {
-  padding-left: 7%;
   position: relative;
+  padding-left: 7%;
 }
 
 .blogSection .blogAside .asideText li::before {
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 50%;
-  background-color: #08fded;
-  display: block;
   position: absolute;
   top: 40%;
   left: 0;
+  border-radius: 50%;
+  background-color: #08fded;
 }
 
 .blogSection .activities {
@@ -962,9 +968,9 @@ footer {
 }
 
 .blogSection .activities .activitiesImg {
+  margin-left: 16px;
   -webkit-box-shadow: -15px 15px 0 1px #08fded;
           box-shadow: -15px 15px 0 1px #08fded;
-  margin-left: 16px;
 }
 
 .blogSection .activities .activitiesText {
@@ -1049,12 +1055,12 @@ footer {
 }
 
 .commentsSection .commentsContainer .commentItem .commentPost h3 {
+  margin-bottom: 1%;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-style: italic;
   font-weight: bold;
-  margin-bottom: 1%;
 }
 
 .commentsSection .commentsContainer .commentItem .commentPost p {
@@ -1068,6 +1074,7 @@ footer {
 }
 
 .commentsSection form {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,7 +1082,6 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
   margin-right: 4%;
   margin-bottom: 6%;
 }
@@ -1095,25 +1101,25 @@ footer {
 }
 
 .commentsSection form .formFields input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   width: 45%;
   height: 50px;
   border: none;
   background-color: #03697c;
   border-bottom: 2px solid #08fded;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .commentsSection form .formFields input[type="email"] {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   width: 45%;
   height: 50px;
   border: none;
   background-color: #03697c;
   border-bottom: 2px solid #08fded;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
 }
 
 .commentsSection form .formFields input::-webkit-input-placeholder {
@@ -1137,16 +1143,16 @@ footer {
 }
 
 .commentsSection form textarea {
-  border: none;
-  background-color: #03697c;
-  border: 2px solid #08fded;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 5%;
-  resize: none;
-  padding-left: 2%;
   padding-top: 2%;
+  padding-left: 2%;
+  border: none;
+  background-color: #03697c;
+  border: 2px solid #08fded;
+  resize: none;
 }
 
 .commentsSection form textarea::-webkit-input-placeholder {
@@ -1171,13 +1177,13 @@ footer {
 }
 
 footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
   width: 100%;
   background-color: #044779;
   color: #f3faff;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  line-height: 28px;
   padding: 10px 0;
 }
 
@@ -1186,11 +1192,11 @@ footer {
     width: 100%;
   }
   .blogSection {
-    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
   .blogSection .blogAside {
     width: 100%;
@@ -1717,15 +1723,15 @@ img {
 }
 
 button {
+  padding: 10px 15px;
   border: none;
   background-color: #08fded;
+  color: #474bb5;
   font-family: 'Walter Turncoat', cursive;
   font-size: 25.4px;
   line-height: 41.6px;
   text-align: center;
-  padding: 10px 15px;
   white-space: nowrap;
-  color: #474bb5;
 }
 
 .mainWrapper {

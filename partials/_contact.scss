@@ -1,26 +1,23 @@
 .contactHeader {
     width: 100%;
+    height: 100vh;
     background-image: url("../assets/contact-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: $textColor;
-    height: 100vh;
-    // display: flex;
     
     .mainWrapper {
-        display: flex;
-        // flex-direction: column;
-        height: 100%;
         max-width: 80%;
-
+        height: 100%;
+        display: flex;
+        
         .contactContent {
             width: 50%;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            height: 100%;
-
+        
             .contactHeaderNav {
-                // border: 2px solid yellow;
                 height: 20%;
                 display: flex;
                 align-items: center;
@@ -34,34 +31,23 @@
                 
 
                 li a {
-                   color: $textColor;
-                   font-family: 'Roboto', sans-serif;
-                   font-size: 20px;
-                   line-height: 29px;
-                   letter-spacing: 1px;
+                   @include listLinks;
                 }
 
                 li a:hover {
                     padding-bottom: 5px;
                     border-bottom: 2px solid $accentColor;
                 }
-                
             }
 
             .contactHeaderTitle {
-                // border: 2px solid yellow;
                 height: 80%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
                 h1 {
-                    width: 100%;
-                    font-size: 121.5px;
-                    line-height: 125.6px;
-                    // border: 2px solid red;
-                    font-family: 'Walter Turncoat', cursive;
-                    padding-top: 5%;
+                    @include secondaryPagesH1;
                     white-space: nowrap;
                     text-align: center;
                 }
@@ -72,29 +58,23 @@
 
 .contactSection {
     width: 100%;
-    // padding: 6% 0;
-    padding-bottom: 5%; 
-    background-color: $primaryColor;
     display: flex;
     justify-content: space-around;
-
+    padding-bottom: 5%; 
+    background-color: $primaryColor;
+    
     .contactContainer {
         width: 35%;
         display: flex;
         justify-content: center;
-        // flex-direction: column;
         align-items: center;
-        // border: 2px solid yellow;
 
         .contactInfo {
             width: 70%;
             flex-direction: column;
             align-items: center;
-            // border: 2px solid hotpink;
-
 
             .contactIcons {
-                // border: 2px solid coral;
                 width: 50%;
                 margin-bottom: 5%;
 
@@ -103,51 +83,40 @@
                     justify-content: space-between;
 
                     li a {
-                        color: $textColor;
                         @include pStyles;
+                        color: $textColor;  
                         font-size: 26px;
                     }
-                }
-                
+                } 
             }
 
             .contactText {
                 display: flex;
                 flex-direction: column;
-                // border: 2px solid orange;
 
                 p {
-                    color: $textColor;
                     @include pStyles;
+                    color: $textColor;
                 }
 
                 p:first-child {
                     margin-bottom: 8%;
                 }
-                
             }
-
         }
-        
     }
 
     .contactForm {
         width: 60%;
 
         form {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            // align-items: flex-start;
-            width: 100%;
-            // border: 2px solid yellow;
-            margin-right: 4%;
-            margin-bottom: 6%;
+            margin: -10% 4% 6% -10%;
             padding: 5% 5%;
-            margin-top: -10%;
-            margin-left: -10%;
-            background-color: $secondaryColor;
             box-shadow: 15px 15px 0 1px rgb(8, 253, 237);
-            
+            background-color: $secondaryColor;
 
             .formFields {
                 display: flex;
@@ -156,44 +125,40 @@
                 margin-bottom: 5%;
 
                 input[type="text"] {
+                    @include pStyles;
                     width: 45%;
                     height: 50px;
                     border: none;
                     background-color: $secondaryColor;
                     border-bottom: 2px solid $textColor;
-                    @include pStyles;
                 }
 
                 input[type="email"] {
+                    @include pStyles;
                     width: 45%;
                     height: 50px;
                     border: none;
                     background-color: $secondaryColor;
                     border-bottom: 2px solid $textColor;
-                    @include pStyles;
                 }
 
                 input::placeholder {
                     padding-left: 10%;
                     color: $textColor;
-                    // @include pStyles;
                 }
             }
 
             textarea {
-                border: none;
-                background-color: $secondaryColor;
-                border: 2px solid $textColor;
                 @include pStyles;
                 margin-bottom: 5%;
-                resize: none;
-                padding-left: 2%;
                 padding-top: 2%;
+                padding-left: 2%;
+                background-color: $secondaryColor;
+                border: 2px solid $textColor;
+                resize: none;
             }
 
             textarea::placeholder {
-                // padding-left: 2%;
-                // padding-top: 2%;
                 color: $textColor;
             }
 
@@ -206,13 +171,17 @@
 }
 
 footer {
+    @include pStyles;
     width: 100%;
+    padding: 10px 0;
     background-color: $tertiaryColor;
     color: $textColor;
-    text-align: center;
-    @include pStyles;
-    padding: 10px 0;
+    text-align: center;   
 }
+
+/***********************************************************
+		    		  MEDIA QUERIES
+***********************************************************/
 
 @media (max-width: 1020px) {
     .contactHeader {
@@ -266,7 +235,6 @@ footer {
                 .contactHeaderTitle {
                     h1 {
                         white-space: initial;
-                        // text-align: center;
                     }
                 }
             }
@@ -279,18 +247,17 @@ footer {
         padding: 10% 0 5% 0;
 
         .contactContainer {
-            order: 1;
             width: 80%;
+            order: 1;
+            
             .contactInfo {
                 width: 100%;
-                // align-items: center;
+                margin-top: 5%;
                 justify-content: center;
                 text-align: center;
-                margin-top: 5%;
-
+                
                 .contactIcons {
                     width: 60%;
-                    // text-align: center;
                     margin: 5% auto;
                 }
 
@@ -304,10 +271,6 @@ footer {
             width: 80%;
             
             form {
-                // margin-right: 0;
-                // margin-bottom: 0;
-                // margin-top: 0;
-                // margin-left: 0;
                 margin: 0;
             }
         }
@@ -320,13 +283,12 @@ footer {
                     ul {
                         width: 100%;
                         flex-wrap: wrap;
-                        // justify-content: center;
 
                         li {
-                            // display: block;
                             width: 50%;
-                            text-align: center;
                             margin-top: 5%;
+                            text-align: center;
+                            
                         }
                     }
                 }
@@ -343,6 +305,7 @@ footer {
 
         .contactForm {
             width: 85%;
+            
             form {
                 box-shadow: none;
 

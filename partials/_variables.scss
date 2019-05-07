@@ -9,3 +9,25 @@ $accentColor: #08fded;
     font-size: 20px;
     line-height: 28px;
 }
+
+@mixin listLinks {
+    color: $textColor;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+}
+
+@mixin secondaryPagesH1 {
+    width: 100%;
+    font-size: 121.5px;
+    line-height: 125.6px;
+    font-family: 'Walter Turncoat', cursive;
+    padding-top: 5%;
+}
+
+@mixin blogH2Styles {
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 80px;
+    font-weight: 100;
+}
