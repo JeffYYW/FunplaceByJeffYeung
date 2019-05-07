@@ -964,16 +964,13 @@ footer {
 .blogSection .activities .activitiesImg {
   -webkit-box-shadow: -15px 15px 0 1px #08fded;
           box-shadow: -15px 15px 0 1px #08fded;
-  margin-right: -9%;
-  margin-right: 0%;
-  margin-left: 30px;
+  margin-left: 16px;
 }
 
 .blogSection .activities .activitiesText {
   padding: 5% 5% 10% 10%;
   border-left: 5px solid #08fded;
   border-bottom: 5px solid #08fded;
-  margin-left: 1.6%;
 }
 
 .blogSection .activities .activitiesText * {
@@ -1182,6 +1179,79 @@ footer {
   font-size: 20px;
   line-height: 28px;
   padding: 10px 0;
+}
+
+@media (max-width: 900px) {
+  .blogHeader .mainWrapper .blogContent .blogHeaderNav ul {
+    width: 100%;
+  }
+  .blogSection {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogSection .blogAside {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: initial;
+    padding: initial;
+    padding: 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogSection .blogAside .asideImg {
+    width: 40%;
+    margin: initial;
+  }
+  .blogSection .blogAside .asideText {
+    width: 55%;
+  }
+  .blogSection .blogAside .asideText .asideMission,
+  .blogSection .blogAside .asideText .recentPosts {
+    padding: initial;
+  }
+  .blogSection .blogAside .asideText .recentPosts {
+    margin-top: 5%;
+  }
+  .blogSection .blogAside .asideText h3 {
+    margin: initial;
+  }
+  .blogSection .activities {
+    width: 100%;
+    margin: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0;
+  }
+  .blogSection .activities .activitiesImg {
+    width: 90%;
+    margin: initial;
+  }
+  .blogSection .activities .activitiesText {
+    padding: initial;
+    padding: 5% 10%;
+    border: none;
+  }
+  .commentsSection .commentsContainer {
+    width: 100%;
+    padding: initial;
+    padding: 0 10% 5% 10%;
+  }
+  .commentsSection .commentsContainer h2 {
+    margin-bottom: 5%;
+  }
+  .commentsSection form {
+    width: 100%;
+    margin: initial;
+    padding: 0 10% 5% 10%;
+  }
 }
 
 .contactHeader {
