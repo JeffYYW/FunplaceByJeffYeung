@@ -245,7 +245,6 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .mainHeader .mainWrapper .headerContent {
@@ -322,15 +321,6 @@ button:active {
           transform: translate(20%, 50%) scale(1.1);
 }
 
-.mainHeader .hamburger {
-  display: none;
-  position: absolute;
-  top: 5%;
-  right: 10%;
-  color: #f3faff;
-  font-size: 40px;
-}
-
 /***********************************************************
 		    	MAIN HEADER MEDIA QUERIES
 ***********************************************************/
@@ -380,20 +370,23 @@ button:active {
 }
 
 @media (max-width: 475px) {
-  .mainHeader .mainWrapper .headerContent .headerNav {
-    display: none;
+  .mainHeader .mainWrapper .headerContent .headerNav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainHeader .mainWrapper .headerContent .headerNav ul li {
+    width: 50%;
+    margin-top: 5%;
+    text-align: center;
   }
   .mainHeader .mainWrapper .headerContent .headerTitle {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 40%;
   }
   .mainHeader .mainWrapper .headerContent .headerTitle h1 {
     font-size: 60px;
-  }
-  .mainHeader .hamburger {
-    display: block;
   }
 }
 
@@ -888,7 +881,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .blogHeader .mainWrapper .blogContent {
@@ -962,15 +954,6 @@ footer {
   line-height: 125.6px;
   font-family: 'Walter Turncoat', cursive;
   padding-top: 5%;
-}
-
-.blogHeader .hamburger {
-  display: none;
-  position: absolute;
-  top: 5%;
-  right: 10%;
-  color: #f3faff;
-  font-size: 40px;
 }
 
 /***********************************************************
@@ -1408,14 +1391,15 @@ footer {
 }
 
 @media (max-width: 400px) {
-  .blogHeader .mainWrapper .blogContent .blogHeaderNav {
-    display: none;
+  .blogHeader .mainWrapper .blogContent .blogHeaderNav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .blogHeader .mainWrapper .blogContent .blogHeaderTitle {
-    padding-top: 40%;
-  }
-  .blogHeader .hamburger {
-    display: block;
+  .blogHeader .mainWrapper .blogContent .blogHeaderNav ul li {
+    width: 50%;
+    margin-top: 5%;
+    text-align: center;
   }
   .commentsSection form .formFields {
     -webkit-box-orient: vertical;
@@ -1449,7 +1433,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
 .contactHeader .mainWrapper .contactContent {
@@ -1525,15 +1508,6 @@ footer {
   padding-top: 5%;
   white-space: nowrap;
   text-align: center;
-}
-
-.contactHeader .hamburger {
-  display: none;
-  position: absolute;
-  top: 5%;
-  right: 10%;
-  color: #f3faff;
-  font-size: 40px;
 }
 
 /***********************************************************
@@ -1819,14 +1793,15 @@ footer {
 }
 
 @media (max-width: 475px) {
-  .contactHeader .mainWrapper .contactContent .contactHeaderNav {
-    display: none;
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .contactHeader .mainWrapper .contactContent .contactHeaderTitle {
-    padding-top: 40%;
-  }
-  .contactHeader .hamburger {
-    display: block;
+  .contactHeader .mainWrapper .contactContent .contactHeaderNav ul li {
+    width: 50%;
+    margin-top: 5%;
+    text-align: center;
   }
   .contactSection .contactContainer .contactInfo .contactIcons {
     width: 90%;

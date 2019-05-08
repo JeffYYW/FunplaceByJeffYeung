@@ -14,8 +14,7 @@
         max-width: 80%;
         height: 100%;
         display: flex;
-        position: relative;
-        
+
         .contactContent {
             width: 50%;
             height: 100%;
@@ -62,10 +61,6 @@
                 }
             }
         }
-    }
-
-    .hamburger {
-        @include hamburger;
     }
 }
 
@@ -313,17 +308,18 @@ footer {
         .mainWrapper {
             .contactContent {
                     .contactHeaderNav {
-                        display: none;
-                    }
+                        ul {
+                            width: 100%;
+                            flex-wrap: wrap;
 
-                    .contactHeaderTitle {
-                        padding-top: 40%;
+                            li {
+                                width: 50%;
+                                margin-top: 5%;
+                                text-align: center;
+                            }
+                        }
                     }
             }
-        }
-
-        .hamburger {
-            display: block;
         }
     }
     

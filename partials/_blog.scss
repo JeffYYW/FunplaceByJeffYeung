@@ -10,13 +10,10 @@
     background-size: cover;
     color: $textColor;
     
-    
     .mainWrapper {
         max-width: 90%;
         height: 100%;
         display: flex;
-        position: relative;
-        
         
         .blogContent {
             width: 50%;
@@ -64,10 +61,6 @@
                 }
             }
         }
-    }
-
-    .hamburger {
-        @include hamburger;
     }
 }
 
@@ -433,18 +426,18 @@ footer {
         .mainWrapper {
             .blogContent {
                     .blogHeaderNav {
-                        display: none;
-                    }
+                        ul {
+                            width: 100%;
+                            flex-wrap: wrap;
 
-                    .blogHeaderTitle {
-                        padding-top: 40%;
+                            li {
+                                width: 50%;
+                                margin-top: 5%;
+                                text-align: center;
+                            }
+                        }
                     }
-                    
                 }
-            }
-
-            .hamburger {
-                display: block;
             }
     }
         

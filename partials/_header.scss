@@ -62,7 +62,6 @@ button:active {
     .mainWrapper {
         height: 100%;
         display: flex;
-        position: relative;
 
         .headerContent {
             width: 50%;
@@ -115,10 +114,6 @@ button:active {
         .headerImg {
             transform: translate(20%, 50%) scale(1.1);
         }
-    }
-
-    .hamburger {
-        @include hamburger;
     }
 }
 
@@ -203,22 +198,26 @@ button:active {
         .mainWrapper {
             .headerContent {
                     .headerNav {
-                        display: none;
+                        ul {
+                            width: 100%;
+                            flex-wrap: wrap;
+
+                            li {
+                                width: 50%;
+                                margin-top: 5%;
+                                text-align: center;
+                            }
+                        }
                     }
 
                     .headerTitle {
                         align-items: flex-start;
-                        padding-top: 40%;
 
                         h1 {
                             font-size: 60px;
                         }
                     }
             }
-        }
-
-        .hamburger {
-            display: block;
         }
     } 
 }
