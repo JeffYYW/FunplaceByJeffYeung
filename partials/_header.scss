@@ -62,6 +62,7 @@ button:active {
     .mainWrapper {
         height: 100%;
         display: flex;
+        position: relative;
 
         .headerContent {
             width: 50%;
@@ -114,6 +115,10 @@ button:active {
         .headerImg {
             transform: translate(20%, 50%) scale(1.1);
         }
+    }
+
+    .hamburger {
+        @include hamburger;
     }
 }
 
@@ -194,26 +199,26 @@ button:active {
 }
 
 @media (max-width: 475px) {
-    .mainHeader .mainWrapper .headerContent {
-                .headerNav {
-                    ul {
-                        width: 100%;
-                        flex-wrap: wrap;
+    .mainHeader {
+        .mainWrapper {
+            .headerContent {
+                    .headerNav {
+                        display: none;
+                    }
 
-                        li {
-                            width: 50%;
-                            margin-top: 5%;
-                            text-align: center;
+                    .headerTitle {
+                        align-items: flex-start;
+                        padding-top: 40%;
+
+                        h1 {
+                            font-size: 60px;
                         }
                     }
-                }
-                .headerTitle {
-                    align-items: flex-start;
-
-                    h1 {
-                        padding-top: 40%;
-                        font-size: 60px;
-                    }
-                }
             }
+        }
+
+        .hamburger {
+            display: block;
+        }
+    } 
 }

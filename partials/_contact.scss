@@ -14,6 +14,7 @@
         max-width: 80%;
         height: 100%;
         display: flex;
+        position: relative;
         
         .contactContent {
             width: 50%;
@@ -61,6 +62,10 @@
                 }
             }
         }
+    }
+
+    .hamburger {
+        @include hamburger;
     }
 }
 
@@ -304,22 +309,24 @@ footer {
 }
 
 @media (max-width: 475px) {
-    .contactHeader .mainWrapper .contactContent {
-                .contactHeaderNav {
-                    ul {
-                        width: 100%;
-                        flex-wrap: wrap;
-
-                        li {
-                            width: 50%;
-                            margin-top: 5%;
-                            text-align: center;
-                            
-                        }
+    .contactHeader {
+        .mainWrapper {
+            .contactContent {
+                    .contactHeaderNav {
+                        display: none;
                     }
-                }
-    }
 
+                    .contactHeaderTitle {
+                        padding-top: 40%;
+                    }
+            }
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+    
     .contactSection {
         .contactContainer {
             .contactInfo {
@@ -348,3 +355,5 @@ footer {
         }
     }
 }
+
+

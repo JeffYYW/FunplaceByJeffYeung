@@ -31,3 +31,12 @@ $accentColor: #08fded;
     font-size: 80px;
     font-weight: 100;
 }
+
+@mixin hamburger {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: $textColor;
+    font-size: 40px;
+}
