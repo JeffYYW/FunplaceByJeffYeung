@@ -179,6 +179,58 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/***********************************************************
+		    		  BASE STYLES
+***********************************************************/
+h1, h2, h3, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #08fded;
+  color: #474bb5;
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 25.4px;
+  line-height: 41.6px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+button:hover,
+button:focus {
+  background-color: #f3faff;
+}
+
+button:active {
+  background-color: coral;
+}
+
+.mainWrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/***********************************************************
+		    		  MAIN HEADER
+***********************************************************/
 .mainHeader {
   width: 100%;
   height: 100vh;
@@ -270,7 +322,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /***********************************************************
-		    		  MEDIA QUERIES
+		    	MAIN HEADER MEDIA QUERIES
 ***********************************************************/
 @media (min-width: 1600px) {
   .mainHeader .mainWrapper .headerImg {
@@ -339,6 +391,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   }
 }
 
+/***********************************************************
+		    		FOUR LINKS SECTION
+***********************************************************/
 .fourLinks {
   width: 100%;
   padding: 15% 0 5% 0;
@@ -410,6 +465,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   line-height: 28px;
 }
 
+/***********************************************************
+		    		QUADRANT SECTION
+***********************************************************/
 .quadrantSection {
   width: 100%;
   background-color: #474bb5;
@@ -522,6 +580,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 5% 0;
 }
 
+/***********************************************************
+		    		ROAD TRIP SECTION
+***********************************************************/
 .roadTripsSection {
   width: 100%;
   background-color: #03697c;
@@ -571,6 +632,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   background-size: cover;
 }
 
+/***********************************************************
+		    		EVENTS SECTION
+***********************************************************/
 .eventsSection {
   width: 100%;
   background-color: #03697c;
@@ -622,6 +686,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 5% 0;
 }
 
+/***********************************************************
+		    		GALLERY SECTION
+***********************************************************/
 .gallerySection {
   width: 100%;
   padding: 5% 0;
@@ -654,7 +721,7 @@ footer {
 }
 
 /***********************************************************
-		    		  MEDIA QUERIES
+		    	  MAIN PAGE MEDIA QUERIES
 ***********************************************************/
 @media (max-width: 1250px) {
   .quadrantSection .mainWrapper .ourPrograms .ourProgramsImg {
@@ -797,6 +864,9 @@ footer {
   }
 }
 
+/***********************************************************
+		    		  BLOG PAGE HEADER
+***********************************************************/
 .blogHeader {
   width: 100%;
   height: 90vh;
@@ -887,6 +957,9 @@ footer {
   padding-top: 5%;
 }
 
+/***********************************************************
+		    		  BLOG SECTION
+***********************************************************/
 .blogSection {
   width: 100%;
   max-width: 100%;
@@ -1008,6 +1081,9 @@ footer {
   line-height: 28px;
 }
 
+/***********************************************************
+		    		  COMMENTS SECTION
+***********************************************************/
 .commentsSection {
   width: 100%;
   display: -webkit-box;
@@ -1210,7 +1286,7 @@ footer {
 }
 
 /***********************************************************
-		    		  MEDIA QUERIES
+		    	 BLOG PAGE MEDIA QUERIES
 ***********************************************************/
 @media (max-width: 900px) {
   .blogHeader .mainWrapper .blogContent .blogHeaderNav ul {
@@ -1340,6 +1416,9 @@ footer {
   }
 }
 
+/***********************************************************
+		    		CONTACT PAGE HEADER
+***********************************************************/
 .contactHeader {
   width: 100%;
   height: 90vh;
@@ -1432,6 +1511,9 @@ footer {
   text-align: center;
 }
 
+/***********************************************************
+		    		  CONTACT SECTION
+***********************************************************/
 .contactSection {
   width: 100%;
   display: -webkit-box;
@@ -1573,7 +1655,7 @@ footer {
 
 .contactSection .contactForm form .formFields input[type="text"]:focus,
 .contactSection .contactForm form .formFields input[type="email"]:focus {
-  border: 2px solid #08fded;
+  border: 5px solid #08fded;
 }
 
 .contactSection .contactForm form .formFields input::-webkit-input-placeholder {
@@ -1609,7 +1691,7 @@ footer {
 }
 
 .contactSection .contactForm form textarea:focus {
-  border: 2px solid #08fded;
+  border: 5px solid #08fded;
 }
 
 .contactSection .contactForm form textarea::-webkit-input-placeholder {
@@ -1645,7 +1727,7 @@ footer {
 }
 
 /***********************************************************
-		    		  MEDIA QUERIES
+		    	CONTACT PAGE MEDIA QUERIES
 ***********************************************************/
 @media (max-width: 1020px) {
   .contactHeader .mainWrapper .contactContent .contactHeaderNav ul {
@@ -1743,51 +1825,5 @@ footer {
     width: 100%;
     margin-bottom: 5%;
   }
-}
-
-h1, h2, h3, ul, li, p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
-}
-
-button {
-  padding: 10px 15px;
-  border: none;
-  background-color: #08fded;
-  color: #474bb5;
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 25.4px;
-  line-height: 41.6px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-button:hover,
-button:focus {
-  background-color: #f3faff;
-}
-
-button:active {
-  background-color: coral;
-}
-
-.mainWrapper {
-  max-width: 80%;
-  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

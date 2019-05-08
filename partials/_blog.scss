@@ -1,3 +1,7 @@
+/***********************************************************
+		    		  BLOG PAGE HEADER
+***********************************************************/
+
 .blogHeader {
     width: 100%;
     height: 90vh;
@@ -5,8 +9,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: $textColor;
-    
-
     
     .mainWrapper {
         max-width: 90%;
@@ -62,6 +64,10 @@
         }
     }
 }
+
+/***********************************************************
+		    		  BLOG SECTION
+***********************************************************/
 
 .blogSection {
     width: 100%;
@@ -155,6 +161,10 @@
             }
         }
 }
+
+/***********************************************************
+		    		  COMMENTS SECTION
+***********************************************************/
 
 .commentsSection {
     width: 100%;
@@ -287,7 +297,7 @@ footer {
 }
 
 /***********************************************************
-		    		  MEDIA QUERIES
+		    	 BLOG PAGE MEDIA QUERIES
 ***********************************************************/
 
 @media (max-width: 900px) {
@@ -444,7 +454,3 @@ footer {
     }
 }
 
-// compelled to get minute details right
-// offset the margin of the border by as much as the box shadow width
-
-// main 2 div width may be too small
